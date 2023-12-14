@@ -2,7 +2,7 @@ export default function BackToTop() {
     return (
         <a
         href="#home"
-        className="p-3 border border-black hover:bg-black hover:text-white rounded-full fixed bottom-[5%] right-[2%]"
+        className="hidden sm:block sm:p-2 md:p-3 border text-black/50 border-black/50 hover:bg-black hover:text-white rounded-full fixed bottom-[5%] right-[2%]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
