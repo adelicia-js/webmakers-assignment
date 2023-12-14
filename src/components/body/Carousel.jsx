@@ -32,5 +32,5 @@ export default function ImageCarousel({ images }) {
 }
 
 ImageCarousel.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.string).isRequired,
+  images: PropTypes.arrayOf(PropTypes.object).isRequired,
 };

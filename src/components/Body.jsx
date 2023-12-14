@@ -1,6 +1,7 @@
 import Introduction from "./body/Intro";
 import ImageCarousel from "./body/Carousel";
 import HowItWorks from "./body/Working";
+import CustomerReview from "./body/Review";
 
 const image_list = [
   {
@@ -29,6 +30,7 @@ export default function MainSection() {
       <Introduction />
       <ImageCarousel images={image_list}/>
       <HowItWorks/>
+      <CustomerReview/>
       <section id="pricing"></section>
       <section id="faq"></section>
       <section id="contact-us"></section>
