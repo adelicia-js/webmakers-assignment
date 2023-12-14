@@ -6,11 +6,9 @@ function App() {
   return (
     <div
       id="home"
-      className="p-8 bg-fixed bg-gradient-to-bl from-pink-200/60 via-white to-white "
+      className="p-8 bg-fixed bg-gradient-to-bl from-pink-200/60 via-white to-white max-w-screen"
     >
-      <header className="bg-transparent">
-        <NavBar />
-      </header>
+      <NavBar />
       <main>
         <Introduction />
         <section id="how-it-works"></section>

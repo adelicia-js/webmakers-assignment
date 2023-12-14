@@ -9,16 +9,15 @@ export default function NavBar() {
   };
 
   return (
-    <div>
-      
+    <header>
       {/* General Navbar */}
-      <ul className="hidden sm:flex min-h-[5vh] flex-row justify-between sm:px-8 items-center text-center">
-        <li className="">
-          <a href="#home" className="font-heading font-bold md:text-xl">
+      <ul className="hidden sm:flex sm:flex-row lg:grid min-h-[5vh] lg:grid-cols-3 justify-between md:px-8 items-center text-center">
+        <li className="col-start-1 justify-self-start">
+          <a href="#home" className="font-heading font-bold sm:text-2xl md:text-xl">
             UniCraft
           </a>
         </li>
-        <ul className="flex font-general flex-row justify-center items-center gap-8 md:text-md">
+        <ul className="col-start-2 flex flex-row font-general justify-center items-center gap-8 sm:text-base">
           <li>
             <a href="#how-it-works">How It Works</a>
           </li>
@@ -29,10 +28,11 @@ export default function NavBar() {
             <a href="#faq">FAQ</a>
           </li>
         </ul>
-        <li className="">
+
+        <li className="col-start-3 justify-self-end">
           <a
             href="#contact-us"
-            className="font-general border border-black px-8 py-3 rounded-md md:text-md"
+            className="font-general border border-black sm:py-3 sm:px-5 md:px-8 md:py-3 rounded-md sm:text-base hover:border-white/60 hover:bg-black hover:text-white hover:shadow-lg hover:shadow-pink-300/50"
           >
             Contact Us
           </a>
@@ -95,6 +95,6 @@ export default function NavBar() {
           </div>
         )}
       </div>
-    </div>
+    </header>
   );
 }
