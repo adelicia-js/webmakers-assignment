@@ -5,7 +5,7 @@ const HeadingDescription = () => {
     <section className="flex flex-col gap-6 justify-center items-center text-center min-h-[40vh]">
       <h1 className="text-4xl sm:text-6xl md:text-7xl text-center font-bold">
         Elevate Your Presence with{" "}
-        <span className="lg:whitespace-pre">
+        <span className="xl:whitespace-pre">
           Seamless Design and Innovation.
         </span>
       </h1>
@@ -27,7 +27,7 @@ const CompaniesDescription = () => {
   return (
     <section className="font-general text-gray-400 mt-4 md:mt-6 lg:mt-8 flex flex-col justify-center md:justify-end items-center gap-6 sm:min-h-[15vh]">
       <p className="text-sm md:text-md">Trusted by 250+ Companies</p>
-      <ul className="p-4 grid grid-rows-2 grid-cols-3 lg:flex lg:flex-row gap-14 md:gap-20 sm:justify-center sm:place-items-center lg:justify-end items-center">
+      <ul className="p-4 grid grid-rows-2 grid-cols-3 lg:flex lg:flex-row gap-14 md:gap-20 lg:gap-16 sm:justify-center sm:place-items-center lg:justify-end items-center">
         <li id="zapier-logo">
           <svg
             width="72"

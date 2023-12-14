@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 export default function ImageCarousel({ images }) {
   return (
-    <section className="flex flex-col mb-20">
-      <section className="overflow-hidden md:max-h-[50vh] -mt-12 md:-mt-16 mb-4 sm:mb-6">
-        <ul className="p-6 gap-6 md:pt-4 md:-mx-52 lg:-mx-32 grid grid-rows-3 grid-cols-2 md:grid-rows-1 md:grid-cols-5 md:gap-2 lg:gap-4 flex-wrap">
+    <section className="flex flex-col ">
+      <section className="overflow-hidden -mt-12 md:-mt-16 mb-4 sm:mb-6">
+        <ul className="p-6 gap-6 md:pt-4 md:-mx-[30rem] lg:-mx-[15rem] grid grid-rows-3 grid-cols-2 md:grid-rows-1 md:grid-cols-6 md:gap-2 lg:gap-4 flex-wrap">
           {images.map((image, index) => (
             <li
               key={index}
