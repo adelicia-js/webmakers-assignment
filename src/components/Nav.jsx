@@ -12,19 +12,19 @@ export default function NavBar() {
     <header>
       {/* General Navbar */}
       <ul className="hidden sm:flex sm:flex-row lg:grid min-h-[5vh] lg:grid-cols-3 justify-between md:px-8 items-center text-center">
-        <li className="col-start-1 justify-self-start">
-          <a href="#home" className="font-heading font-bold sm:text-2xl md:text-xl">
+        <li className="col-start-1 justify-self-start font-heading font-bold sm:text-2xl md:text-xl">
+          <a href="#home" className="">
             UniCraft
           </a>
         </li>
         <ul className="col-start-2 flex flex-row font-general justify-center items-center gap-8 sm:text-base">
-          <li>
+          <li className="hover:underline underline-offset-8 decoration-black/40">
             <a href="#how-it-works">How It Works</a>
           </li>
-          <li>
+          <li className="hover:underline underline-offset-8 decoration-black/40">
             <a href="#pricing">Pricing</a>
           </li>
-          <li>
+          <li className="hover:underline underline-offset-8 decoration-black/40">
             <a href="#faq">FAQ</a>
           </li>
         </ul>
