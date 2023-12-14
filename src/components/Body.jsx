@@ -3,22 +3,22 @@ import ImageCarousel from "./body/Carousel";
 
 const image_list = [
   {
-      imageUrl:"../../public/imageOne.webp"
+      imageUrl:"../../imageOne.webp"
   },
   {
-      imageUrl:"../../public/imageTwo.webp"
+      imageUrl:"../../imageTwo.webp"
   },
   {
-      imageUrl:"../../public/imageThree.webp"
+      imageUrl:"../../imageThree.webp"
   },
   {
-      imageUrl:"../../public/imageFour.webp"
+      imageUrl:"../../imageFour.webp"
   },
   {
-      imageUrl:"../../public/imageFive.webp"
+      imageUrl:"../../imageFive.webp"
   },
   {
-      imageUrl:"../../public/imageSix.webp"
+      imageUrl:"../../imageSix.webp"
   },
 ]
 
