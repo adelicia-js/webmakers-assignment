@@ -1,7 +1,7 @@
 export default function CustomerReview() {
   return (
     <section>
-      <div className="bg-pink-50/50 p-8 px-32 min-h-[50vh] flex flex-col justify-center items-center gap-8">
+      <div className="bg-pink-50/50 p-8 px-16 sm:px-32 min-h-[50vh] flex flex-col justify-center items-center gap-8">
         <svg
           width="142"
           height="40"
@@ -70,12 +70,12 @@ export default function CustomerReview() {
             fill="#101828"
           />
         </svg>
-        <p className="font-heading text-center sm:text-2xl lg:text-4xl font-bold">
+        <p className="font-heading text-center text-xl sm:text-2xl lg:text-4xl font-bold ">
         We{`'`}ve been with UniCraft to kick start every new project and can{`'`}t imagine working without it.
         </p>
-        <p className="">client_image</p>
+        <img alt="Candice Wu" src="" className=""/>
         <p className="font-heading sm:text-[1rem]">Candice Wu</p>
-        <p className="-mt-8 font-general sm:text-xs text-gray-400">Product Manager, Sisyphus</p>
+        <p className="-mt-8 font-general sm:text-xs text-gray-400 break-words">Product Manager, Sisyphus</p>
       </div>
     </section>
   );
