@@ -27,8 +27,8 @@ const CompaniesDescription = () => {
   return (
     <section className="font-general text-gray-400 mt-4 md:mt-6 lg:mt-8 flex flex-col justify-center md:justify-end items-center gap-6 sm:min-h-[15vh]">
       <p className="text-sm md:text-md">Trusted by 250+ Companies</p>
-      <ul className="p-4 grid grid-rows-2 grid-cols-3 lg:flex lg:flex-row gap-14 md:gap-20 lg:gap-16 sm:justify-center sm:place-items-center lg:justify-end items-center">
-        <li id="zapier-logo">
+      <ul className="gap-12 sm:p-4 py-4 grid grid-rows-2 grid-cols-3 lg:flex lg:flex-row md:gap-20 lg:gap-16 justify-center sm:place-items-center lg:justify-end items-center">
+        <li id="zapier-logo" className="justify-self-center">
           <svg
             width="72"
             height="34"
@@ -67,7 +67,7 @@ const CompaniesDescription = () => {
             />
           </svg>
         </li>
-        <li id="spotify-logo">
+        <li id="spotify-logo" className="justify-self-center">
           <svg
             width="107"
             height="33"
@@ -82,7 +82,7 @@ const CompaniesDescription = () => {
             />
           </svg>
         </li>
-        <li id="zoom-logo">
+        <li id="zoom-logo" className="justify-self-center">
           <svg
             width="75"
             height="18"
@@ -99,7 +99,7 @@ const CompaniesDescription = () => {
             />
           </svg>
         </li>
-        <li id="slack-logo">
+        <li id="slack-logo" className="justify-self-center">
           <svg
             width="93"
             height="37"
@@ -142,7 +142,7 @@ const CompaniesDescription = () => {
             </defs>
           </svg>
         </li>
-        <li id="amazon-logo">
+        <li id="amazon-logo" className="justify-self-center">
           <svg
             width="83"
             height="37"
@@ -213,7 +213,7 @@ const CompaniesDescription = () => {
             </defs>
           </svg>
         </li>
-        <li id="adobe-logo">
+        <li id="adobe-logo" className="justify-self-center">
           <svg
             width="101"
             height="37"
