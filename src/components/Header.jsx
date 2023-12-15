@@ -45,7 +45,7 @@ const GeneralNavbar = () => {
         </li>
       </ul>
 
-      <li id="general-contact-us-link" className="col-start-3 justify-self-end">
+      <li id="general-contact-us" className="col-start-3 justify-self-end">
         <a
           id="general-contact-us-link"
           href="#contact-us"
@@ -105,21 +105,34 @@ const SmallNavbar = () => {
             />
           </svg>
 
-          <ul id="small-navbar-menu" className="max-h-[50vh] pt-8 pl-2 flex flex-col text-lg gap-8 uppercase font-general">
+          <ul
+            id="small-navbar-menu"
+            className="max-h-[50vh] pt-8 pl-2 flex flex-col text-lg gap-8 uppercase font-general"
+          >
             <li id="small-home">
-              <a id="small-home-link" href="#home">Home</a>
+              <a id="small-home-link" href="#home">
+                Home
+              </a>
             </li>
             <li id="small-how-it-works">
-              <a id="small-how-it-works-link" href="#how-it-works">How It Works</a>
+              <a id="small-how-it-works-link" href="#how-it-works">
+                How It Works
+              </a>
             </li>
             <li id="small-pricing">
-              <a id="small-pricing" href="#pricing">Pricing</a>
+              <a id="small-pricing" href="#pricing">
+                Pricing
+              </a>
             </li>
             <li id="small-faq">
-              <a id="small-faq-link" href="#faq">FAQ</a>
+              <a id="small-faq-link" href="#faq">
+                FAQ
+              </a>
             </li>
             <li id="small-contact-us">
-              <a id="small-contact-us-link" href="#contact-us">Contact Us</a>
+              <a id="small-contact-us-link" href="#contact-us">
+                Contact Us
+              </a>
             </li>
           </ul>
         </div>
