@@ -9,15 +9,16 @@ const FAQItem = ({ question, answer }) => {
   };
 
   return (
-    <div className="border-b border-gray-300/50">
+    <div id="faq-item" className="border-b border-gray-300/50">
       <div
+        id="faq-item-wrapper"
         className={`flex justify-between items-center cursor-pointer py-2 px-4 ${
           isOpen ? "bg-pink-100/20" : "bg-transparent"
         }`}
         onClick={toggleQuestion}
       >
-        <p className="text-lg">{question}</p>
-        <p>
+        <p id="faq-question" className="text-lg">{question}</p>
+        <p id="faq-toggle-button">
           {isOpen ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +52,7 @@ const FAQItem = ({ question, answer }) => {
           )}
         </p>
       </div>
-      {isOpen && <p className="p-6 text-gray-600 text-md">{answer}</p>}
+      {isOpen && <p id="faq-answer" className="p-6 text-gray-600 text-md">{answer}</p>}
     </div>
   );
 };
@@ -91,10 +92,10 @@ export default function FAQSection() {
   ];
 
   return (
-    <section className="p-8 flex flex-col justify-center items-center gap-2">
-        <p className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold">Frequently Asked Questions</p>
-        <p className="text-center text-md font-general text-gray-500">Everything you need to know about the product and billing.</p>
-        <div className="pt-4 sm:pt-6  font-general sm:w-[75vw] lg:w-[50vw]">
+    <section id="faq" className="p-8 flex flex-col justify-center items-center gap-2">
+        <p id="faq-title" className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold">Frequently Asked Questions</p>
+        <p id="faq-description" className="text-center text-md font-general text-gray-500">Everything you need to know about the product and billing.</p>
+        <div id="faq-items" className="pt-4 sm:pt-6  font-general sm:w-[75vw] lg:w-[50vw]">
           {faqData.map((faq, index) => (
             <FAQItem key={index} question={faq.question} answer={faq.answer} />
           ))}

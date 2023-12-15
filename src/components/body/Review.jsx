@@ -1,8 +1,12 @@
 export default function CustomerReview() {
   return (
-    <section>
-      <div className="bg-pink-50/50 p-8 px-16 sm:px-32 min-h-[50vh] flex flex-col justify-center items-center gap-8">
+    <section id="review">
+      <div
+        id="review-wrapper"
+        className="bg-gray-100/50 p-8 px-16 sm:px-32 min-h-[50vh] flex flex-col justify-center items-center gap-8"
+      >
         <svg
+          id="company-logo"
           width="142"
           height="40"
           viewBox="0 0 142 40"
@@ -70,18 +74,27 @@ export default function CustomerReview() {
             fill="#101828"
           />
         </svg>
-        <p className="font-heading text-center text-xl sm:text-2xl lg:text-4xl font-semibold">
+        <p
+          id="client-review"
+          className="font-heading text-center text-xl sm:text-2xl lg:text-4xl font-semibold"
+        >
           We{`'`}ve been with UniCraft to kick start every new project and can
           {`'`}t imagine working without it.
         </p>
-        <div className="flex flex-col items-center">
+        <div id="client-wrapper" className="flex flex-col items-center">
           <img
+            id="client-image"
             alt="Candice Wu"
             src="../../candice.webp"
             className="w-fit h-[6vh] sm:h-[8vh] md:h-[9vh] sm:max-w-[10vw] sm:max-h-[10vh]"
           />
-          <p className="font-heading sm:text-[1rem]">Candice Wu</p>
-          <p className="font-general text-[0.65rem] sm:text-xs text-gray-400 break-words">
+          <p id="client-name" className="font-heading sm:text-[1rem]">
+            Candice Wu
+          </p>
+          <p
+            id="client-designation"
+            className="font-general text-[0.65rem] sm:text-xs text-gray-400 break-words"
+          >
             Product Manager, Sisyphus
           </p>
         </div>

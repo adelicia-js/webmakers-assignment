@@ -28,7 +28,7 @@ const image_list = [
 
 export default function MainSection() {
   return (
-    <main>
+    <main id="main-content-wrapper">
       <Introduction />
       <ImageCarousel images={image_list}/>
       <HowItWorks/>

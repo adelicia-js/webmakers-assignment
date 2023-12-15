@@ -1,31 +1,32 @@
 export default function HowItWorks() {
   return (
-    <section className="p-8 md:p-12 lg:p-20 min-h-[30vh]">
-      <div className="p-12 lg:p-20 border border-gray-200/50 rounded-lg shadow-lg shadow-gray-400/50 text-center flex flex-col gap-8">
-        <div>
-          <h1 className="text-4xl sm:text-6xl md:text-7xl text-center font-bold mb-6">
+    <section id="how-it-works" className="p-8 md:p-12 lg:p-20 min-h-[30vh]">
+      <div id="how-it-works-wrapper" className="p-12 lg:p-20 border border-gray-200/50 rounded-lg shadow-lg shadow-gray-400/50 text-center flex flex-col gap-8">
+        <div id="how-it-works-header-wrapper">
+          <h1 id="how-it-works-header" className="text-4xl sm:text-6xl md:text-7xl text-center font-bold mb-6">
             How it works
           </h1>
-          <h2 className="font-heading sm:text-sm md:text-md text-center ">
+          <h2 id="how-it-works-description" className="font-heading sm:text-sm md:text-md text-center ">
             Premium designs, unlimited requests, super fast delivery, for one
             flat monthly fee.
           </h2>
         </div>
 
-        <div className="relative">
-          <ul className="z-10 grid grid-rows-5 md:grid-rows-1 md:grid-cols-5 justify-center items-center md:gap-12">
-            <li className="justify-self-center md:justify-self-start w-full">
-              <ul>
-                <li className="">
-                  <p className="font-heading text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] z-0 text-pink-500/20">
+        <div id="process-wrapper" className="relative">
+          <ul id="process-list" className="z-10 grid grid-rows-5 md:grid-rows-1 md:grid-cols-5 justify-center items-center md:gap-12">
+            <li id="process-1" className="justify-self-center md:justify-self-start w-full">
+              <ul id="process-1-wrapper">
+                <li id="">
+                  <p id="process-1-number" className="font-heading text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] z-0 text-pink-500/20">
                     1
                   </p>
                 </li>
               </ul>
             </li>
 
-            <li className="justify-self-center rotate-[110deg] md:rotate-0">
+            <li id="process-arrow-1" className="justify-self-center rotate-[110deg] md:rotate-0">
               <svg
+                id="process-arrow-1-svg"
                 width="46"
                 height="25"
                 viewBox="0 0 46 25"
@@ -40,18 +41,19 @@ export default function HowItWorks() {
               </svg>
             </li>
 
-            <li className="justify-self-center md:justify-self-center w-full">
-              <ul>
-                <li className="">
-                  <p className="font-heading text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] z-0 text-pink-500/20">
+            <li id="process-2" className="justify-self-center md:justify-self-center w-full">
+              <ul id="process-2-wrapper">
+                <li id="">
+                  <p id="process-2-number" className="font-heading text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] z-0 text-pink-500/20">
                     2
                   </p>
                 </li>
               </ul>
             </li>
 
-            <li className="justify-self-center transform -scale-y-100 rotate-[80deg] md:transform-none md:scale-y-0 md:rotate-0">
+            <li id="process-arrow-2" className="justify-self-center transform -scale-y-100 rotate-[80deg] md:transform-none md:scale-y-0 md:rotate-0">
               <svg
+                id="process-arrow-2-svg"
                 width="46"
                 height="25"
                 viewBox="0 0 46 25"
@@ -66,10 +68,10 @@ export default function HowItWorks() {
               </svg>
             </li>
 
-            <li className="justify-self-center md:justify-self-end w-full">
-              <ul>
-                <li className="">
-                  <p className="font-heading text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] z-0 text-pink-500/20">
+            <li id="process-3" className="justify-self-center md:justify-self-end w-full">
+              <ul id="process-3-wrapper">
+                <li id="">
+                  <p id="process-3-number" className="font-heading text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] z-0 text-pink-500/20">
                     3
                   </p>
                 </li>
