@@ -86,7 +86,7 @@ export default function CustomerReview() {
             id="client-image"
             alt="Candice Wu"
             src="../../candice.webp"
-            className="w-fit h-[6vh] sm:h-[8vh] md:h-[9vh] sm:max-w-[10vw] sm:max-h-[10vh]"
+            className="w-fit h-[6vh] sm:w-[8vw] sm:h-[8vh] md:h-[9vh] lg:h-[10vh] sm:max-w-[10vw] sm:max-h-[10vh] object-contain"
           />
           <p id="client-name" className="font-heading sm:text-[1rem]">
             Candice Wu
