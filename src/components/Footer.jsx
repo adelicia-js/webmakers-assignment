@@ -1,6 +1,6 @@
 const ContactUs = () => {
   return (
-    <section id="contact-us" className="p-8 text-center">
+    <section id="contact-us" className="p-8 sm:p-12 sm:pb-8 md:py-20 md:pb-16 lg:py-24 lg:pb-20 place-content-center text-center">
       <p
         id="contact-us-header-1"
         className="text-4xl sm:text-5xl lg:text-6xl font-heading font-semibold mb-1"
@@ -9,13 +9,13 @@ const ContactUs = () => {
       </p>
       <p
         id="contact-us-header-2"
-        className="text-4xl sm:text-5xl lg:text-6xl font-heading font-semibold mb-3"
+        className="text-4xl sm:text-5xl lg:text-6xl font-heading font-semibold mb-6"
       >
         No catches. Simple.
       </p>
       <p
         id="contact-us-description"
-        className="text-lg font-general text-gray-500 mb-6"
+        className="text-lg font-general text-gray-500 mb-8"
       >
         Start your 30-day free trial.{" "}
         <span className="whitespace-nowrap">Cancel anytime.</span>
@@ -213,12 +213,13 @@ const FooterContent = () => {
   return (
     <section id="footer-content-wrapper" className="p-8 flex flex-col">
       <div id="footer-description" className="border-t flex flex-col gap-4">
-        <p
+        <a
           id="footer-logo"
+          href="#home"
           className="font-heading mt-4 text-2xl sm:text-2xl lg:text-3xl font-bold"
         >
           UniCraft
-        </p>
+        </a>
         <p
           id="footer-company-description-text"
           className="text-lg sm:text-md font-general text-gray-500"
