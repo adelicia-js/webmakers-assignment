@@ -4,7 +4,6 @@ import HowItWorks from "./body/Working";
 import CustomerReview from "./body/Review";
 // import PricingSection from "./body/Pricing";
 import FAQSection from "./body/Faq";
-import ContactUs from "./body/Contact";
 
 const image_list = [
   {
@@ -36,7 +35,6 @@ export default function MainSection() {
       <CustomerReview/>
       {/* <PricingSection/> */}
       <FAQSection/>
-      <ContactUs/>
     </main>
   );
 }

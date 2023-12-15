@@ -2,7 +2,7 @@ import "./App.css";
 import BackToTop from "./components/Top";
 import NavBar from "./components/Header";
 import MainSection from "./components/Body";
-import FooterSection from "./components/Footer";
+import FooterSection from "./components/footer/Footer";
 
 function App() {
   return (
