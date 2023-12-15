@@ -2,7 +2,8 @@ import Introduction from "./body/Intro";
 import ImageCarousel from "./body/Carousel";
 import HowItWorks from "./body/Working";
 import CustomerReview from "./body/Review";
-import PricingSection from "./body/Pricing";
+// import PricingSection from "./body/Pricing";
+import FAQSection from "./body/Faq";
 
 const image_list = [
   {
@@ -32,8 +33,8 @@ export default function MainSection() {
       <ImageCarousel images={image_list}/>
       <HowItWorks/>
       <CustomerReview/>
-      <PricingSection/>
-      <section id="faq"></section>
+      {/* <PricingSection/> */}
+      <FAQSection/>
       <section id="contact-us"></section>
     </main>
   );
