@@ -21,7 +21,7 @@ export default function ImageCarousel({ images }) {
                 id={`carousel-image-${index}`}
                 src={image.imageUrl}
                 alt={`Work Image ${index + 1}`}
-                className="md:w-full md:h-full"
+                className="w-[50vw] h-fit object-contain"
               />
             </li>
           ))}

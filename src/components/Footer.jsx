@@ -51,6 +51,7 @@ const FooterSocials = () => {
         >
           <a
             id="twitter-link"
+            aria-label="Twitter Link"
             href="https://twitter.com/webmakersstudio"
             target="_blank"
             rel="noreferrer"
@@ -76,6 +77,7 @@ const FooterSocials = () => {
         >
           <a
             id="linkedin-link"
+            aria-label="LinkedIn Link"
             href="https://www.linkedin.com/in/chetanverma7/"
             target="_blank"
             rel="noreferrer"
@@ -102,6 +104,7 @@ const FooterSocials = () => {
         >
           <a
             id="facebook-link"
+            aria-label="Facebook Link"
             href="https://www.facebook.com/"
             target="_blank"
             rel="noreferrer"
@@ -123,6 +126,7 @@ const FooterSocials = () => {
         <li id="github-link-wrapper" className="text-gray-400 hover:text-black">
           <a
             id="github-link"
+            aria-label="GitHub Link"
             href="https://github.com/chetanverma16"
             target="_blank"
             rel="noreferrer"
@@ -149,6 +153,7 @@ const FooterSocials = () => {
         >
           <a
             id="angel_list-link"
+            aria-label="Angel List Link"
             href="https://wellfound.com/company/webmakers-studio"
             target="_blank"
             rel="noreferrer"
@@ -179,6 +184,7 @@ const FooterSocials = () => {
         >
           <a
             id="dribble-link"
+            aria-label="Dribble Link"
             href="https://dribbble.com/chetanverma"
             target="_blank"
             rel="noreferrer"
