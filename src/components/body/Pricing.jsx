@@ -4,13 +4,19 @@ export default function PricingSection() {
       id="pricing"
       className="p-4 md:p-8 flex flex-col gap-8 justify-center items-center text-center"
     >
-      <p className="text-center font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+      <p
+        id="pricing-header"
+        className="text-center font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold"
+      >
         Pricing made for{" "}
         <span className="whitespace-pre sm:whitespace-normal">
           collaborative support.
         </span>
       </p>
-      <p className="-mt-4 font-general text-gray-500 text-md md:text-lg lg:text-lg text-center">
+      <p
+        id="pricing-description"
+        className="-mt-4 font-general text-gray-500 text-md md:text-lg lg:text-lg text-center"
+      >
         Plain is made for your entire company. Only pay for users that actually
         message customers. Everyone else is free, forever.
       </p>
@@ -47,7 +53,7 @@ export default function PricingSection() {
           <a
             id="freebie-start-plan-button"
             href=""
-            className="font-general border border-black hover:bg-black hover:text-white hover:border-white px-4 py-2 text-center rounded-lg mb-2"
+            className="font-general border border-black hover:bg-black hover:text-white hover:border-white hover:shadow-md hover:shadow-pink-500/20 px-4 py-2 text-center rounded-lg mb-2"
           >
             Get Started Now
           </a>
@@ -61,7 +67,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -69,8 +75,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -82,7 +87,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -90,8 +95,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -103,7 +107,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -111,8 +115,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -124,7 +127,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -132,8 +135,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -145,7 +147,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -153,8 +155,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -166,7 +167,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -174,8 +175,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -187,7 +187,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -195,8 +195,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -208,7 +207,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -216,8 +215,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -255,7 +253,7 @@ export default function PricingSection() {
           <a
             id="professional-start-plan-button"
             href=""
-            className="font-general border border-white bg-white text-black hover:bg-white hover:text-black hover:border-white px-4 py-2 text-center rounded-lg mb-2"
+            className="font-general border border-white bg-white text-black hover:bg-white hover:text-black hover:border-white hover:shadow-lg hover:shadow-pink-500/20 px-4 py-2 text-center rounded-lg mb-2"
           >
             Get Started Now
           </a>
@@ -269,7 +267,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -277,8 +275,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -290,7 +287,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -298,8 +295,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -311,7 +307,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -319,8 +315,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -332,7 +327,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -340,8 +335,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -353,7 +347,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -361,8 +355,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -374,7 +367,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -382,8 +375,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -395,7 +387,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -403,8 +395,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -416,7 +407,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -424,8 +415,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -463,7 +453,7 @@ export default function PricingSection() {
           <a
             id="enterprise-start-plan-button"
             href=""
-            className="font-general border border-black hover:bg-black hover:text-white hover:border-white px-4 py-2 text-center rounded-lg mb-2"
+            className="font-general border border-black hover:bg-black hover:text-white hover:border-white hover:shadow-md hover:shadow-pink-500/20 px-4 py-2 text-center rounded-lg mb-2"
           >
             Get Started Now
           </a>
@@ -477,7 +467,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -485,8 +475,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -498,7 +487,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -506,8 +495,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -519,7 +507,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -527,8 +515,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -540,7 +527,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -548,8 +535,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -561,7 +547,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -569,8 +555,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -582,7 +567,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -590,8 +575,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -603,7 +587,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -611,8 +595,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
@@ -624,7 +607,7 @@ export default function PricingSection() {
             >
               <p>
                 <svg
-                  className="h-4 w-4"
+                  className="feature-icon h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -632,8 +615,7 @@ export default function PricingSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {" "}
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </p>
