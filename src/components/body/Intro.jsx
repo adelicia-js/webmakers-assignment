@@ -25,7 +25,7 @@ const CompaniesDescription = () => {
   return (
     <section id="intro-companies-wrapper" className="font-general text-gray-400 mt-4 md:mt-6 lg:mt-8 flex flex-col justify-center md:justify-end items-center gap-6 sm:min-h-[15vh]">
       <p id="intro-companies-header" className="text-sm md:text-md">Trusted by 250+ Companies</p>
-      <ul id="intro-companies-list" className="gap-12 sm:p-4 py-4 grid grid-rows-2 grid-cols-3 lg:flex lg:flex-row md:gap-20 lg:gap-16 justify-center sm:place-items-center lg:justify-end items-center">
+      <ul id="intro-companies-list" className="gap-12 sm:p-4 py-4 grid grid-rows-3 grid-cols-2 min-[350px]:grid-rows-2 min-[350px]:grid-cols-3 lg:flex lg:flex-row md:gap-20 lg:gap-16 justify-center sm:place-items-center lg:justify-end items-center">
         <li id="zapier-logo" className="justify-self-center">
           <svg
             width="72"

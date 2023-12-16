@@ -3,7 +3,7 @@ export default function HowItWorks() {
     <section id="how-it-works" className="p-8 md:p-12 lg:p-20 min-h-[30vh]">
       <div
         id="how-it-works-wrapper"
-        className="p-12 lg:p-20 border border-gray-200/50 rounded-lg shadow-lg shadow-gray-400/50 text-center flex flex-col"
+        className="p-12 lg:px-20 lg:py-32 border border-t-gray-400/20 border-x-gray-400/20 border-b-gray-200 rounded-lg shadow-lg shadow-gray-400/50 text-center flex flex-col"
       >
         <div id="how-it-works-header-wrapper" className="-mb-6">
           <h1
