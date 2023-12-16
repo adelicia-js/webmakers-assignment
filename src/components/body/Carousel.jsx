@@ -15,7 +15,7 @@ export default function ImageCarousel({ images }) {
             <li
               id={`carousel-image-${index}-wrapper`}
               key={index}
-              className="border border-gray-100/10 rounded-sm shadow-lg md:shadow-md shadow-gray-400/20 md:shadow-gray-200"
+              className="shadow-lg shadow-gray-500"
             >
               <img
                 id={`carousel-image-${index}`}

@@ -8,8 +8,7 @@ const GeneralNavbar = () => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setIsSticky(true);
-      }
-      else {
+      } else {
         setIsSticky(false);
       }
     };
@@ -24,7 +23,11 @@ const GeneralNavbar = () => {
   return (
     <ul
       id="general-navbar-wrapper"
-      className={`hidden transition-all duration-100 ease-in-out sm:flex sm:flex-row lg:grid min-h-[5vh] lg:grid-cols-3 justify-between md:px-8 items-center text-center ${isSticky ? 'lg:fixed top-0 left-0 right-0 w-full sm:py-4 z-50 bg-pink-50 shadow-md' : ''}`}
+      className={`hidden transition-all duration-100 ease-in-out sm:flex sm:flex-row lg:grid min-h-[5vh] lg:grid-cols-3 justify-between md:px-8 items-center text-center ${
+        isSticky
+          ? "lg:fixed top-0 left-0 right-0 w-full sm:py-4 z-50 bg-pink-50 shadow-md"
+          : ""
+      }`}
     >
       <li
         id="home-logo"
@@ -34,35 +37,37 @@ const GeneralNavbar = () => {
           UniCraft
         </a>
       </li>
-      <ul
-        id="general-sub-menu"
-        className="col-start-2 flex flex-row font-general justify-center items-center gap-8 sm:text-base"
-      >
-        <li
-          id="general-how-it-works"
-          className="hover:underline underline-offset-8 decoration-black/40"
+      <li id="general-sub-menu-wrapper">
+        <ul
+          id="general-sub-menu"
+          className="col-start-2 flex flex-row font-general justify-center items-center gap-8 sm:text-base"
         >
-          <a id="general-how-it-works-link" href="#how-it-works">
-            How It Works
-          </a>
-        </li>
-        <li
-          id="general-pricing"
-          className="hover:underline underline-offset-8 decoration-black/40"
-        >
-          <a id="general-pricing-link" href="#pricing">
-            Pricing
-          </a>
-        </li>
-        <li
-          id="general-faq"
-          className="hover:underline underline-offset-8 decoration-black/40"
-        >
-          <a id="general-faq-link" href="#faq">
-            FAQ
-          </a>
-        </li>
-      </ul>
+          <li
+            id="general-how-it-works"
+            className="hover:underline underline-offset-8 decoration-black/40"
+          >
+            <a id="general-how-it-works-link" href="#how-it-works">
+              How It Works
+            </a>
+          </li>
+          <li
+            id="general-pricing"
+            className="hover:underline underline-offset-8 decoration-black/40"
+          >
+            <a id="general-pricing-link" href="#pricing">
+              Pricing
+            </a>
+          </li>
+          <li
+            id="general-faq"
+            className="hover:underline underline-offset-8 decoration-black/40"
+          >
+            <a id="general-faq-link" href="#faq">
+              FAQ
+            </a>
+          </li>
+        </ul>
+      </li>
 
       <li id="general-contact-us" className="col-start-3 justify-self-end">
         <a
