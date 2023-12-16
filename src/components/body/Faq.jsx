@@ -12,7 +12,7 @@ const FAQItem = ({ question, answer }) => {
     <div id="faq-item" className="border-b border-gray-300/50">
       <div
         id="faq-item-wrapper"
-        className={`flex justify-between items-center cursor-pointer py-2 px-4 ${
+        className={`flex flex-row justify-between items-center cursor-pointer py-2 px-4 ${
           isOpen ? "bg-pink-100/20" : "bg-transparent"
         }`}
         onClick={toggleQuestion}

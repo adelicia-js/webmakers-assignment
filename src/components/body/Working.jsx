@@ -37,7 +37,7 @@ export default function HowItWorks() {
               </p>
               <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col gap-1 justify-center items-center text-black">
                 <p className="font-bold font-heading text-lg sm:text-xl lg:text-[1.4rem]">Subscribe</p>
-                <p className="font-general text-gray-500 text-[0.7rem] sm:text-xs md:text-[0.8rem] lg:text-sm h-fit w-[50vw] sm:w-[30vw] md:w-[18vw] lg:w-[12vw]">
+                <p className="font-general font-light text-gray-600 text-[0.7rem] sm:text-xs md:text-[0.8rem] lg:text-sm h-fit w-[50vw] sm:w-[30vw] md:w-[18vw] lg:w-[12vw]">
                   Subscribe to a plan & you{`'`}ll get instant access to your
                   private Slack channel.
                 </p>
@@ -78,7 +78,7 @@ export default function HowItWorks() {
                   </p>
                   <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col gap-1 justify-center items-center text-black">
                     <p className="font-heading font-bold text-lg sm:text-xl lg:text-[1.4rem]">Request</p>
-                    <p className="font-general text-gray-500 text-[0.7rem] sm:text-xs md:text-[0.8rem] lg:text-sm h-fit w-[50vw] sm:w-[30vw] md:w-[18vw] lg:w-[15vw]">
+                    <p className="font-general font-light text-gray-600 text-[0.7rem] sm:text-xs md:text-[0.8rem] lg:text-sm h-fit w-[50vw] sm:w-[30vw] md:w-[18vw] lg:w-[15vw]">
                       Submit any number of requests. We{`'`}ll work through
                       them, one at a time, ensuring consistent updates every
                       24-48 hours.
@@ -122,7 +122,7 @@ export default function HowItWorks() {
                   </p>
                   <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col gap-1 justify-center items-center text-black">
                     <p className="font-heading font-bold text-lg sm:text-xl lg:text-[1.4rem]">Revise</p>
-                    <p className="text-gray-500 font-general text-[0.7rem] sm:text-xs md:text-[0.8rem] lg:text-sm h-fit w-[50vw] sm:w-[30vw] md:w-[18vw] lg:w-[15vw]">
+                    <p className="font-light text-gray-600 font-general text-[0.7rem] sm:text-xs md:text-[0.8rem] lg:text-sm h-fit w-[50vw] sm:w-[30vw] md:w-[18vw] lg:w-[15vw]">
                       Need changes? We guarantee unlimited revisions until
                       you{`'`}re 200% satisfied.
                     </p>

@@ -237,7 +237,7 @@ export default function FooterSection() {
   return (
     <footer
       id="footer"
-      className="bg-fixed bg-gradient-to-b from-violet-400/80 via-white to-violet-200/50"
+      className="bg-local bg-gradient-to-b from-violet-400/20 via-white to-violet-200/50"
     >
       <ContactUs />
       <FooterContent />
