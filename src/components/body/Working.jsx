@@ -1,30 +1,53 @@
 export default function HowItWorks() {
   return (
     <section id="how-it-works" className="p-8 md:p-12 lg:p-20 min-h-[30vh]">
-      <div id="how-it-works-wrapper" className="p-12 lg:p-20 border border-gray-200/50 rounded-lg shadow-lg shadow-gray-400/50 text-center flex flex-col gap-8">
-        <div id="how-it-works-header-wrapper">
-          <h1 id="how-it-works-header" className="text-4xl sm:text-6xl md:text-7xl text-center font-bold mb-6">
+      <div
+        id="how-it-works-wrapper"
+        className="p-12 lg:p-20 border border-gray-200/50 rounded-lg shadow-lg shadow-gray-400/50 text-center flex flex-col"
+      >
+        <div id="how-it-works-header-wrapper" className="-mb-6">
+          <h1
+            id="how-it-works-header"
+            className="text-4xl sm:text-6xl md:text-7xl text-center font-bold mb-6 md:mb-2 min-[400px]:whitespace-pre"
+          >
             How it works
           </h1>
-          <h2 id="how-it-works-description" className="font-heading sm:text-sm md:text-md text-center ">
-            Premium designs, unlimited requests, super fast delivery, for one
-            flat monthly fee.
+          <h2
+            id="how-it-works-description"
+            className="font-general font-light sm:text-md text-center"
+          >
+            Premium designs, unlimited requests, super fast delivery,<span className="md:whitespace-nowrap"> for one flat monthly fee.</span>
           </h2>
         </div>
 
-        <div id="process-wrapper" className="relative">
-          <ul id="process-list" className="z-10 grid grid-rows-5 md:grid-rows-1 md:grid-cols-5 justify-center items-center md:gap-12">
-            <li id="process-1" className="justify-self-center md:justify-self-start w-full">
-              <ul id="process-1-wrapper">
-                <li id="">
-                  <p id="process-1-number" className="font-heading text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] z-0 text-pink-500/20">
-                    1
-                  </p>
-                </li>
-              </ul>
+        <div id="process-wrapper" className="relative md:px-6">
+          <ul
+            id="process-list"
+            className="z-10 flex flex-col md:flex-row lg:grid lg:grid-rows-1 lg:grid-cols-5 justify-center items-center md:gap-6"
+          >
+            <li
+              id="process-1"
+              className="justify-self-center md:justify-self-start w-full relative md:px-6"
+            >
+              <p
+                id="process-1-number"
+                className="font-heading text-[10rem] md:text-[12rem] lg:text-[12rem] z-0 text-pink-500/20 relative"
+              >
+                1
+              </p>
+              <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col gap-1 justify-center items-center text-black">
+                <p className="font-bold font-heading text-lg sm:text-xl lg:text-[1.4rem]">Subscribe</p>
+                <p className="font-general text-gray-500 text-[0.7rem] sm:text-xs md:text-[0.8rem] lg:text-sm h-fit w-[50vw] sm:w-[30vw] md:w-[18vw] lg:w-[12vw]">
+                  Subscribe to a plan & you{`'`}ll get instant access to your
+                  private Slack channel.
+                </p>
+              </div>
             </li>
 
-            <li id="process-arrow-1" className="justify-self-center rotate-[110deg] md:rotate-0">
+            <li
+              id="process-arrow-1"
+              className="justify-self-center rotate-[110deg] md:rotate-0"
+            >
               <svg
                 id="process-arrow-1-svg"
                 width="46"
@@ -41,17 +64,34 @@ export default function HowItWorks() {
               </svg>
             </li>
 
-            <li id="process-2" className="justify-self-center md:justify-self-center w-full">
+            <li
+              id="process-2"
+              className="justify-self-center md:justify-self-center w-full relative md:px-4"
+            >
               <ul id="process-2-wrapper">
-                <li id="">
-                  <p id="process-2-number" className="font-heading text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] z-0 text-pink-500/20">
+                <li id="process-2-item">
+                  <p
+                    id="process-2-number"
+                    className="font-heading text-[10rem] sm:text-[10rem] md:text-[12rem] lg:text-[12rem] z-0 text-pink-500/20"
+                  >
                     2
                   </p>
+                  <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col gap-1 justify-center items-center text-black">
+                    <p className="font-heading font-bold text-lg sm:text-xl lg:text-[1.4rem]">Request</p>
+                    <p className="font-general text-gray-500 text-[0.7rem] sm:text-xs md:text-[0.8rem] lg:text-sm h-fit w-[50vw] sm:w-[30vw] md:w-[18vw] lg:w-[15vw]">
+                      Submit any number of requests. We{`'`}ll work through
+                      them, one at a time, ensuring consistent updates every
+                      24-48 hours.
+                    </p>
+                  </div>
                 </li>
               </ul>
             </li>
 
-            <li id="process-arrow-2" className="justify-self-center transform -scale-y-100 rotate-[80deg] md:transform-none md:scale-y-0 md:rotate-0">
+            <li
+              id="process-arrow-2"
+              className="justify-self-center transform -scale-y-100 rotate-[80deg] md:transform-none md:scale-y-0 md:rotate-0"
+            >
               <svg
                 id="process-arrow-2-svg"
                 width="46"
@@ -68,18 +108,29 @@ export default function HowItWorks() {
               </svg>
             </li>
 
-            <li id="process-3" className="justify-self-center md:justify-self-end w-full">
+            <li
+              id="process-3"
+              className="justify-self-center md:justify-self-end w-full relative"
+            >
               <ul id="process-3-wrapper">
                 <li id="">
-                  <p id="process-3-number" className="font-heading text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] z-0 text-pink-500/20">
+                  <p
+                    id="process-3-number"
+                    className="font-heading text-[10rem] sm:text-[10rem] md:text-[12rem] lg:text-[12rem] z-0 text-pink-500/20"
+                  >
                     3
                   </p>
+                  <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col gap-1 justify-center items-center text-black">
+                    <p className="font-heading font-bold text-lg sm:text-xl lg:text-[1.4rem]">Revise</p>
+                    <p className="text-gray-500 font-general text-[0.7rem] sm:text-xs md:text-[0.8rem] lg:text-sm h-fit w-[50vw] sm:w-[30vw] md:w-[18vw] lg:w-[15vw]">
+                      Need changes? We guarantee unlimited revisions until
+                      you{`'`}re 200% satisfied.
+                    </p>
+                  </div>
                 </li>
               </ul>
             </li>
           </ul>
-
-          
         </div>
       </div>
     </section>
