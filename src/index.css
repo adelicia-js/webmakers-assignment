@@ -1,14 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer base {
-    html {
-        scroll-behavior: smooth;
-    }    
-    h1 {
-        @apply font-heading;
-    }
+  html {
+    scroll-behavior: smooth;
+  }
+  h1 {
+    @apply font-heading;
+  }
 }
