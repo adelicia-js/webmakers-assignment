@@ -1,482 +1,642 @@
-// TODO Make responsive!
-
 export default function PricingSection() {
   return (
-    <section id="pricing" className="p-20 flex flex-col gap-8 justify-center items-center text-center">
-      <p className="text-center font-heading sm:text-3xl md:text-4xl lg:text-5xl font-bold">
-        Pricing made for collaborative support.
+    <section
+      id="pricing"
+      className="p-4 md:p-8 flex flex-col gap-8 justify-center items-center text-center"
+    >
+      <p className="text-center font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+        Pricing made for{" "}
+        <span className="whitespace-pre sm:whitespace-normal">
+          collaborative support.
+        </span>
       </p>
-      <p className="-mt-4 font-general text-gray-500 sm:text-md md:text-lg lg:text-lg text-center">
+      <p className="-mt-4 font-general text-gray-500 text-md md:text-lg lg:text-lg text-center">
         Plain is made for your entire company. Only pay for users that actually
         message customers. Everyone else is free, forever.
       </p>
 
-      <section className="grid sm:grid-rows-3 sm:grid-cols-1 md:grid-rows-1 md:grid-cols-3 gap-8">
-        <div className="border border-gray-400/20 shadow-lg shadow-gray-400/50 rounded-md p-8 flex flex-col justify-center items-start gap-6">
-          <p className="font-heading lg:text-2xl font-bold">Freebie</p>
-          <p className="font-general text-left lg:text-md">
+      <section
+        id="pricing-plans-wrapper"
+        className="flex flex-col gap-4 px-4 min-[400px]:px-12 min-[500px]:px-16 sm:px-20 md:flex-row md:grid md:grid-rows-2 md:grid-cols-2 md:px-2 md:gap-6 lg:grid-rows-1 xl:grid-cols-3 xl:px-32"
+      >
+        <div
+          id="freebie-plan-wrapper"
+          className="flex flex-col p-4 border border-gray-500/20 bg-white text-black shadow-lg shadow-gray-500/50 rounded-md gap-2 text-left"
+        >
+          <p
+            id="freebie-title"
+            className="font-heading font-semibold text-xl sm:text-2xl md:text-3xl"
+          >
+            Freebie
+          </p>
+          <p
+            id="freebie-description"
+            className="font-light font-general text-sm sm:text-md pb-4"
+          >
             Ideal for individuals who need quick access to basic features.
           </p>
-          <p className="font-heading text-gray-500 flex items-center">
-            <span className="tracking-[-0.1em] lg:text-6xl text-black whitespace-pre">
-              $0{" "}
+          <p
+            id="freebie-price"
+            className="font-heading font-light pb-4 flex flex-row items-center gap-2"
+          >
+            <span className="font-heading font-semibold text-black text-4xl sm:text-5xl">
+              $0
             </span>
-            / Month
+            <span className="text-md text-gray-500 ">/ month</span>
           </p>
           <a
+            id="freebie-start-plan-button"
             href=""
-            className="font-general text-center py-2 md:px-[7.5rem] md:place-self-center whitespace-pre border border-black rounded-md hover:border-white/60 hover:bg-black hover:text-white hover:shadow-lg hover:shadow-pink-300/50"
+            className="font-general border border-black hover:bg-black hover:text-white hover:border-white px-4 py-2 text-center rounded-lg mb-2"
           >
             Get Started Now
           </a>
-          <ul className="font-general flex flex-col gap-3">
-            <li className="font-semibold flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+          <ul
+            id="freebie-features-list"
+            className="font-general font-light text-gray-400 flex flex-col justify-center items-start gap-2 text-left text-sm md:text-lg"
+          >
+            <li
+              id="freebie-feature_1"
+              className="text-black font-semibold flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>20,000+ of PNG & SVG graphics</p>
             </li>
-            <li className="font-semibold flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="freebie-feature_2"
+              className="text-black font-semibold flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Access to 100 million stock images</p>
             </li>
-            <li className="text-gray-400/80 flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="freebie-feature_3"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Upload custom icons and fonts</p>
             </li>
-            <li className="text-gray-400/80 flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="freebie-feature_4"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Unlimited Sharing</p>
             </li>
-            <li className="text-gray-400/80 flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="freebie-feature_5"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Upload graphics & video in up to 4k</p>
             </li>
-            <li className="text-gray-400/80 flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="freebie-feature_6"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Unlimited Projects</p>
             </li>
-            <li className="text-gray-400/80 flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="freebie-feature_7"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Instant Access to our design system</p>
             </li>
-            <li className="text-gray-400/80 flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="freebie-feature_8"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Create teams to collaborate on designs</p>
             </li>
           </ul>
         </div>
-        <div className="bg-gray-800 text-white border border-gray-400/20 shadow-lg shadow-gray-400/50 rounded-md p-8 flex flex-col justify-center items-start gap-6">
-          <p className="font-heading lg:text-2xl font-bold">Professional</p>
-          <p className="font-general text-left lg:text-md">
-            Ideal for individuals who who need advanced features and tools for
+
+        <div
+          id="professional-plan-wrapper"
+          className="flex flex-col p-4 border border-gray-500 bg-gray-800 text-white shadow-xl shadow-gray-500/50 rounded-md gap-2 text-left"
+        >
+          <p
+            id="professional-title"
+            className="font-heading font-semibold text-xl sm:text-2xl md:text-3xl"
+          >
+            Professional
+          </p>
+          <p
+            id="professional-description"
+            className="font-light font-general text-sm sm:text-md pb-4"
+          >
+            Ideal for individuals who need advanced features and tools for
             client work.
           </p>
-          <p className="font-heading text-gray-500 flex items-center">
-            <span className="tracking-tight lg:text-6xl text-white whitespace-pre">
-              $25{" "}
+          <p
+            id="professional-price"
+            className="font-heading font-light pb-4 flex flex-row items-center gap-2"
+          >
+            <span className="font-semibold text-white text-4xl sm:text-5xl">
+              $25
             </span>
-            / Month
+            <span className="text-md text-white/50">/ month</span>
           </p>
           <a
+            id="professional-start-plan-button"
             href=""
-            className="font-general text-center py-2 md:px-[7.5rem] md:place-self-center whitespace-pre border bg-white text-black border-white rounded-md hover:border-black/60 hover:shadow-lg hover:shadow-pink-300/30"
+            className="font-general border border-white bg-white text-black hover:bg-white hover:text-black hover:border-white px-4 py-2 text-center rounded-lg mb-2"
           >
             Get Started Now
           </a>
-          <ul className="font-general flex flex-col gap-3">
-            <li className="flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+          <ul
+            id="professional-features-list"
+            className="font-general text-white flex flex-col justify-center items-start gap-2 text-left text-sm md:text-lg"
+          >
+            <li
+              id="professional-feature_1"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>20,000+ of PNG & SVG graphics</p>
             </li>
-            <li className="flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="professional-feature_2"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Access to 100 million stock images</p>
             </li>
-            <li className="flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="professional-feature_3"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Upload custom icons and fonts</p>
             </li>
-            <li className="flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="professional-feature_4"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Unlimited Sharing</p>
             </li>
-            <li className="flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="professional-feature_5"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Upload graphics & video in up to 4k</p>
             </li>
-            <li className="text-gray-400/80 flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="professional-feature_6"
+              className="font-light text-white/60 flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Unlimited Projects</p>
             </li>
-            <li className="text-gray-400/80 flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="professional-feature_7"
+              className="font-light text-white/60 flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Instant Access to our design system</p>
             </li>
-            <li className="text-gray-400/80 flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="professional-feature_8"
+              className="font-light text-white/60 flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Create teams to collaborate on designs</p>
             </li>
           </ul>
         </div>
-        <div className="border border-gray-400/20 shadow-lg shadow-gray-400/50 rounded-md p-8 flex flex-col justify-center items-start gap-6">
-          <p className="font-heading lg:text-2xl font-bold">Enterprise</p>
-          <p className="font-general text-left lg:text-md">
-          Ideal for businesses who need personalized services and security for large teams. 
+
+        <div
+          id="enterprise-plan-wrapper"
+          className="flex flex-col p-4 border border-gray-500/20 bg-white text-black shadow-lg shadow-gray-500/50 rounded-md gap-2 text-left"
+        >
+          <p
+            id="enterprise-title"
+            className="font-heading font-semibold text-xl sm:text-2xl md:text-3xl"
+          >
+            Enterprise
           </p>
-          <p className="font-heading text-gray-500 flex items-center">
-            <span className="tracking-tight lg:text-6xl text-black whitespace-pre">
-              $100{" "}
+          <p
+            id="enterprise-description"
+            className="font-light font-general text-sm sm:text-md pb-4"
+          >
+            Ideal for businesses who need personalized services and security for
+            large teams.
+          </p>
+          <p
+            id="enterprise-price"
+            className="font-heading font-light pb-4 flex flex-row items-center gap-2"
+          >
+            <span className="font-heading font-semibold text-black text-4xl sm:text-5xl">
+              $100
             </span>
-            / Month
+            <span className="text-md text-gray-500 ">/ month</span>
           </p>
           <a
+            id="enterprise-start-plan-button"
             href=""
-            className="font-general text-center py-2 md:px-[7.5rem] md:place-self-center whitespace-pre border border-black rounded-md hover:border-white/60 hover:bg-black hover:text-white hover:shadow-lg hover:shadow-pink-300/50"
+            className="font-general border border-black hover:bg-black hover:text-white hover:border-white px-4 py-2 text-center rounded-lg mb-2"
           >
             Get Started Now
           </a>
-          <ul className="font-general flex flex-col gap-3">
-            <li className="font-semibold flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+          <ul
+            id="enterprise-features-list"
+            className="font-general font-semibold text-black flex flex-col justify-center items-start gap-2 text-left text-sm md:text-lg"
+          >
+            <li
+              id="enterprise-feature_1"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>20,000+ of PNG & SVG graphics</p>
             </li>
-            <li className="font-semibold flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="enterprise-feature_2"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Access to 100 million stock images</p>
             </li>
-            <li className="font-semibold flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="enterprise-feature_3"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Upload custom icons and fonts</p>
             </li>
-            <li className="font-semibold  flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="enterprise-feature_4"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Unlimited Sharing</p>
             </li>
-            <li className="font-semibold flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="enterprise-feature_5"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Upload graphics & video in up to 4k</p>
             </li>
-            <li className="font-semibold flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="enterprise-feature_6"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Unlimited Projects</p>
             </li>
-            <li className="font-semibold flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="enterprise-feature_7"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Instant Access to our design system</p>
             </li>
-            <li className="font-semibold flex gap-2 text-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <li
+              id="enterprise-feature_8"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              <p>
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />{" "}
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </p>
               <p>Create teams to collaborate on designs</p>
             </li>
           </ul>
