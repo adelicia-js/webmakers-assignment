@@ -2,7 +2,7 @@ export default function PricingSection() {
   return (
     <section
       id="pricing"
-      className="p-4 md:p-8 lg:py-12 flex flex-col gap-8 justify-center items-center text-center"
+      className="p-4 md:p-8 lg:py-32 flex flex-col gap-8 justify-center items-center text-center"
     >
       <p
         id="pricing-header"

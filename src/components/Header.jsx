@@ -1,11 +1,30 @@
 import "../App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const GeneralNavbar = () => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsSticky(true);
+      }
+      else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <ul
       id="general-navbar-wrapper"
-      className="hidden sm:flex sm:flex-row lg:grid min-h-[5vh] lg:grid-cols-3 justify-between md:px-8 items-center text-center"
+      className={`hidden transition-all duration-100 ease-in-out sm:flex sm:flex-row lg:grid min-h-[5vh] lg:grid-cols-3 justify-between md:px-8 items-center text-center ${isSticky ? 'lg:fixed top-0 left-0 right-0 w-full sm:py-4 z-50 bg-pink-50 shadow-md' : ''}`}
     >
       <li
         id="home-logo"

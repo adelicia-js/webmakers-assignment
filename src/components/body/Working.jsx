@@ -1,6 +1,6 @@
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="p-8 md:p-12 lg:p-20 min-h-[30vh]">
+    <section id="how-it-works" className="p-8 md:p-12 lg:px-20 lg:py-32 min-h-[30vh]">
       <div
         id="how-it-works-wrapper"
         className="p-12 lg:px-20 lg:py-32 border border-t-gray-400/20 border-x-gray-400/20 border-b-gray-200 rounded-lg shadow-lg shadow-gray-400/50 text-center flex flex-col"

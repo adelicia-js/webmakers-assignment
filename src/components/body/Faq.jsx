@@ -92,7 +92,7 @@ export default function FAQSection() {
   ];
 
   return (
-    <section id="faq" className="p-8 sm:py-16 md:py-20 lg:py-20 flex flex-col justify-center items-center gap-2">
+    <section id="faq" className="p-8 sm:py-16 md:py-20 lg:py-32 flex flex-col justify-center items-center gap-2">
         <p id="faq-title" className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold">Frequently Asked Questions</p>
         <p id="faq-description" className="text-center text-md font-general text-gray-500">Everything you need to know about the product and billing.</p>
         <div id="faq-items" className="flex flex-col sm:gap-6 md:gap-6 lg:gap-8 pt-4 sm:pt-6 font-general sm:w-[75vw] lg:w-[50vw]">
