@@ -2,8 +2,10 @@ import "../App.css";
 import { useState, useEffect } from "react";
 
 const GeneralNavbar = () => {
+  // State to determine whether the navbar should be sticky
   const [isSticky, setIsSticky] = useState(false);
 
+  // Function to handle scrolling & determine sticky state
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -21,6 +23,7 @@ const GeneralNavbar = () => {
   }, []);
 
   return (
+    // General Navbar - Visible to devices with screen width >= 640px
     <ul
       id="general-navbar-wrapper"
       className={`hidden transition-all duration-100 ease-in-out sm:flex sm:flex-row lg:grid min-h-[5vh] lg:grid-cols-3 justify-between md:px-8 items-center text-center ${
@@ -29,6 +32,7 @@ const GeneralNavbar = () => {
           : ""
       }`}
     >
+      {/* General Navbar - Logo */}
       <li
         id="home-logo"
         className="col-start-1 justify-self-start font-heading font-bold sm:text-2xl md:text-xl"
@@ -37,11 +41,14 @@ const GeneralNavbar = () => {
           UniCraft
         </a>
       </li>
+
+      {/* General Navbar - Sub Menu/Links */}
       <li id="general-sub-menu">
         <ul
           id="general-sub-menu"
           className="col-start-2 flex flex-row font-general justify-center items-center gap-8 sm:text-base"
         >
+          {/* General Navbar - How It Works Link */}
           <li
             id="general-how-it-works"
             className="hover:underline underline-offset-8 decoration-black/40"
@@ -49,6 +56,8 @@ const GeneralNavbar = () => {
             <a id="general-how-it-works-link" href="#how-it-works">
               How It Works
             </a>
+
+          {/* General Navbar - Pricing Link */}
           </li>
           <li
             id="general-pricing"
@@ -58,6 +67,8 @@ const GeneralNavbar = () => {
               Pricing
             </a>
           </li>
+
+          {/* General Navbar - FAQ Link */}
           <li
             id="general-faq"
             className="hover:underline underline-offset-8 decoration-black/40"
@@ -69,6 +80,7 @@ const GeneralNavbar = () => {
         </ul>
       </li>
 
+      {/* General Navbar - Contact Us Link*/}
       <li id="general-contact-us" className="col-start-3 justify-self-end">
         <a
           id="general-contact-us-link"
@@ -83,13 +95,19 @@ const GeneralNavbar = () => {
 };
 
 const SmallNavbar = () => {
+  // State to determine navbar menu visibility
   const [isVisible, setIsVisible] = useState(false);
 
+  // Function to toggle navbar menu
   const onClick = () => {
     setIsVisible(!isVisible);
   };
+
   return (
+    // Small Navbar - Visible to devices with screen width < 640px / mobiles
     <div id="small-navbar-wrapper" className="sm:hidden">
+      
+      {/* Small Navbar - Hamburger Menu Icon */}
       <svg
         id="small-navbar-hamburger-icon"
         xmlns="http://www.w3.org/2000/svg"
@@ -107,11 +125,13 @@ const SmallNavbar = () => {
         />
       </svg>
 
+      {/* Small Navbar - Menu: Opens/closes when hamburger menu icon/close icon is clicked */}
       {isVisible && (
         <div
           id="small-navbar-menu-wrapper"
           className="p-8 absolute bg-black text-white h-fit w-screen top-0 left-0"
         >
+          {/* Small Navbar - Close Icon */}
           <svg
             id="small-navbar-close-icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -129,30 +149,40 @@ const SmallNavbar = () => {
             />
           </svg>
 
+          {/* Small Navbar - Menu Items */}
           <ul
             id="small-navbar-menu"
             className="max-h-[50vh] pt-8 pl-2 flex flex-col text-lg gap-8 uppercase font-general"
           >
+            {/* Small Navbar - Home Link*/}
             <li id="small-home">
               <a id="small-home-link" href="#home">
                 Home
               </a>
             </li>
+
+            {/* Small Navbar - How It Works Link */}
             <li id="small-how-it-works">
               <a id="small-how-it-works-link" href="#how-it-works">
                 How It Works
               </a>
             </li>
+
+            {/* Small Navbar - Pricing Link */}
             <li id="small-pricing">
               <a id="small-pricing" href="#pricing">
                 Pricing
               </a>
             </li>
+
+            {/* Small Navbar - FAQ Link */}
             <li id="small-faq">
               <a id="small-faq-link" href="#faq">
                 FAQ
               </a>
             </li>
+
+            {/* Small Navbar - Contact Us Link*/}
             <li id="small-contact-us">
               <a id="small-contact-us-link" href="#contact-us">
                 Contact Us
@@ -168,9 +198,9 @@ const SmallNavbar = () => {
 export default function NavBar() {
   return (
     <header id="header-navbar-wrapper" className="p-8">
-      {/* General Navbar */}
+      {/* General Navbar - devices of width > 640px*/}
       <GeneralNavbar />
-      {/* Navbar for mobiles */}
+      {/* Navbar for mobiles / devices of width < 640px */}
       <SmallNavbar />
     </header>
   );
