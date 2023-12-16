@@ -15,13 +15,13 @@ export default function ImageCarousel({ images }) {
             <li
               id={`carousel-image-${index}-wrapper`}
               key={index}
-              className="shadow-lg shadow-gray-500"
+              className="shadow-md shadow-gray-500/50 rounded-md"
             >
               <img
                 id={`carousel-image-${index}`}
                 src={image.imageUrl}
                 alt={`Work Image ${index + 1}`}
-                className="w-[50vw] h-fit object-contain"
+                className="min-[300px]:w-[50vw] min-[300px]:h-[25v%] sm:h-fit object-contain"
               />
             </li>
           ))}
