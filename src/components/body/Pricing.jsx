@@ -1,4 +1,422 @@
+import PropTypes from "prop-types";
+import { useState } from "react";
+
+const FreePricingModal = ({ isOpen, onClose }) => {
+  // Form data object to store & record input
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  // Handle form input
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    document
+      .getElementById("free-pricing-form-submission-wrapper")
+      .classList.remove("hidden");
+    document
+      .getElementById("free-pricing-form-submission-wrapper")
+      .classList.add("block");
+  };
+
+  return (
+    <div
+      id="free-pricing-modal"
+      className={`fixed top-0 left-0 right-0 w-full h-full flex flex-col items-center justify-center bg-black/50 ${
+        isOpen ? "block" : "hidden"
+      }`}
+    >
+      <div
+        id="free-pricing-modal-content"
+        className="relative bg-white p-8 w-fit sm:w-96 rounded-md shadow-md"
+      >
+        <p
+          id="free-pricing-modal-title"
+          className="font-heading text-2xl font-semibold mb-4 text-center"
+        >
+          Sign Up
+        </p>
+        <form
+          id="free-pricing-form"
+          onSubmit={handleSubmit}
+          className="font-general flex flex-col gap-4 sm:gap-6"
+        >
+          <div id="free-pricing-form-name-wrapper">
+            <label
+              htmlFor="name"
+              className="block text-md font-light text-black"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Enter your name"
+              className="mt-1 p-2 w-full border border-gray-200 rounded-md text-xs font-light text-gray-400 focus:text-sm focus:text-black focus:outline-black focus-visible:outline-black"
+              required
+              autoComplete="on"
+            />
+          </div>
+
+          <div id="free-pricing-form-email-wrapper">
+            <label
+              htmlFor="email"
+              className="block text-md font-light text-black"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Enter your email"
+              className="mt-1 p-2 w-full border border-gray-200 rounded-md text-xs font-light text-gray-400 focus:text-sm focus:text-black focus:outline-black focus-visible:outline-black"
+              required
+              autoComplete="on"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="bg-black text-white py-2 px-4 border border-transparent rounded-md hover:bg-white hover:border-black hover:text-black hover:shadow-lg focus:outline-none"
+          >
+            Submit
+          </button>
+        </form>
+        <div
+          id="free-pricing-form-submission-wrapper"
+          className="mt-4 px-4 hidden text-sm text-center font-heading w-[70vw] sm:w-fit break-words"
+        >
+          <p id="free-pricing-form-submission-message" className="break-words">
+            Thank you for registering.
+          </p>
+          <p>Please check your mail for instructions.</p>
+        </div>
+        <button
+          id="close-free-pricing-modal-button"
+          className="absolute top-[2%] left-[2%] text-black hover:bg-black hover:rounded-full hover:text-white cursor-pointer"
+          onClick={onClose}
+        >
+          <svg
+            aria-label="Close button for freebie pricing modal"
+            id="free-pricing-modal-close-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6 border border-black rounded-full p-1"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
+};
+
+const ProfessionalPricingModal = ({ isOpen, onClose }) => {
+  // Form data object to store & record input
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  // Handle form input
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    document
+      .getElementById("professional-pricing-form-submission-wrapper")
+      .classList.remove("hidden");
+    document
+      .getElementById("professional-pricing-form-submission-wrapper")
+      .classList.add("block");
+  };
+
+  return (
+    <div
+      id="professional-pricing-modal"
+      className={`fixed top-0 left-0 right-0 w-full h-full flex flex-col items-center justify-center bg-black/50 ${
+        isOpen ? "block" : "hidden"
+      }`}
+    >
+      <div
+        id="professional-pricing-modal-content"
+        className="relative bg-white p-8 w-fit sm:w-96 rounded-md shadow-md"
+      >
+        <p
+          id="professional-pricing-modal-title"
+          className="font-heading text-black text-2xl font-semibold mb-4 text-center"
+        >
+          Sign Up
+        </p>
+        <form
+          id="professional-pricing-form"
+          onSubmit={handleSubmit}
+          className="font-general flex flex-col gap-4 sm:gap-6"
+        >
+          <div id="professional-pricing-form-name-wrapper">
+            <label
+              htmlFor="name"
+              className="block text-md font-light text-black"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Enter your name"
+              className="mt-1 p-2 w-full border border-gray-200 rounded-md text-xs font-light text-gray-400 focus:text-sm focus:text-black focus:outline-black focus-visible:outline-black"
+              required
+              autoComplete="on"
+            />
+          </div>
+
+          <div id="professional-pricing-form-email-wrapper">
+            <label
+              htmlFor="email"
+              className="block text-md font-light text-black"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Enter your email"
+              className="mt-1 p-2 w-full border border-gray-200 rounded-md text-xs font-light text-gray-400 focus:text-sm focus:text-black focus:outline-black focus-visible:outline-black"
+              required
+              autoComplete="on"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="bg-black text-white py-2 px-4 border border-transparent rounded-md hover:bg-white hover:border-black hover:text-black hover:shadow-lg focus:outline-none"
+          >
+            Submit
+          </button>
+        </form>
+        <div
+          id="professional-pricing-form-submission-wrapper"
+          className="text-black mt-4 px-4 hidden text-sm text-center font-heading w-[70vw] sm:w-fit break-words"
+        >
+          <p
+            id="professional-pricing-form-submission-message"
+            className="break-words"
+          >
+            Thank you for registering.
+          </p>
+          <p>Please check your mail for instructions.</p>
+        </div>
+        <button
+          id="close-professional-pricing-modal-button"
+          className="absolute top-[2%] left-[2%] text-black hover:bg-black hover:rounded-full hover:text-white cursor-pointer"
+          onClick={onClose}
+        >
+          <svg
+            aria-label="Close button for professional pricing modal"
+            id="professional-pricing-modal-close-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6 border border-black rounded-full p-1"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
+};
+
+const EnterprisePricingModal = ({ isOpen, onClose }) => {
+  // Form data object to store & record input
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  // Handle form input
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    document
+      .getElementById("enterprise-pricing-form-submission-wrapper")
+      .classList.remove("hidden");
+    document
+      .getElementById("enterprise-pricing-form-submission-wrapper")
+      .classList.add("block");
+  };
+
+  return (
+    <div
+      id="enterprise-pricing-modal"
+      className={`fixed top-0 left-0 right-0 w-full h-full flex flex-col items-center justify-center bg-black/50 ${
+        isOpen ? "block" : "hidden"
+      }`}
+    >
+      <div
+        id="enterprisepricing-modal-content"
+        className="relative bg-white p-8 w-fit sm:w-96 rounded-md shadow-md"
+      >
+        <p
+          id="enterprise-pricing-modal-title"
+          className="font-heading text-2xl font-semibold mb-4 text-center"
+        >
+          Sign Up
+        </p>
+        <form
+          id="enterprise-pricing-form"
+          onSubmit={handleSubmit}
+          className="font-general flex flex-col gap-4 sm:gap-6"
+        >
+          <div id="enterprise-pricing-form-name-wrapper">
+            <label
+              htmlFor="name"
+              className="block text-md font-light text-black"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Enter your name"
+              className="mt-1 p-2 w-full border border-gray-200 rounded-md text-xs font-light text-gray-400 focus:text-sm focus:text-black focus:outline-black focus-visible:outline-black"
+              required
+              autoComplete="on"
+            />
+          </div>
+
+          <div id="enterprise-pricing-form-email-wrapper">
+            <label
+              htmlFor="email"
+              className="block text-md font-light text-black"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Enter your email"
+              className="mt-1 p-2 w-full border border-gray-200 rounded-md text-xs font-light text-gray-400 focus:text-sm focus:text-black focus:outline-black focus-visible:outline-black"
+              required
+              autoComplete="on"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="bg-black text-white py-2 px-4 border border-transparent rounded-md hover:bg-white hover:border-black hover:text-black hover:shadow-lg focus:outline-none"
+          >
+            Submit
+          </button>
+        </form>
+        <div
+          id="enterprise-pricing-form-submission-wrapper"
+          className="mt-4 px-4 hidden text-sm text-center font-heading w-[70vw] sm:w-fit break-words"
+        >
+          <p
+            id="enterprise-pricing-form-submission-message"
+            className="break-words"
+          >
+            Thank you for registering.
+          </p>
+          <p>Please check your mail for instructions.</p>
+        </div>
+        <button
+          id="close-enterprise-pricing-modal-button"
+          className="absolute top-[2%] left-[2%] text-black hover:bg-black hover:rounded-full hover:text-white cursor-pointer"
+          onClick={onClose}
+        >
+          <svg
+            aria-label="Close button for enterprise pricing modal"
+            id="enterprise-pricing-modal-close-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6 border border-black rounded-full p-1"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
+};
+
 const FreebiePlan = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div
       id="freebie-plan-wrapper"
@@ -25,13 +443,14 @@ const FreebiePlan = () => {
         </span>
         <span className="text-md text-gray-500 ">/ month</span>
       </p>
-      <a
+      <button
         id="freebie-start-plan-button"
         href=""
         className="font-general border border-black hover:bg-black hover:text-white hover:border-white hover:shadow-md hover:shadow-pink-500/20 px-4 py-2 text-center rounded-lg mb-2"
+        onClick={openModal}
       >
         Get Started Now
-      </a>
+      </button>
       <ul
         id="freebie-features-list"
         className="font-general font-light text-gray-400 flex flex-col justify-center items-start gap-2 text-left text-sm md:text-lg"
@@ -197,11 +616,23 @@ const FreebiePlan = () => {
           <p>Create teams to collaborate on designs</p>
         </li>
       </ul>
+
+      {/* Free Plan Pricing Modal */}
+      <FreePricingModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 };
 
 const ProfessionalPlan = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <div
       id="professional-plan-wrapper"
@@ -229,13 +660,14 @@ const ProfessionalPlan = () => {
         </span>
         <span className="text-md text-white/50">/ month</span>
       </p>
-      <a
+      <button
         id="professional-start-plan-button"
         href=""
         className="font-general border border-white bg-white text-black hover:bg-white hover:text-black hover:border-white hover:shadow-lg hover:shadow-pink-500/20 px-4 py-2 text-center rounded-lg mb-2"
+        onClick={openModal}
       >
         Get Started Now
-      </a>
+      </button>
       <ul
         id="professional-features-list"
         className="font-general text-white flex flex-col justify-center items-start gap-2 text-left text-sm md:text-lg"
@@ -401,11 +833,23 @@ const ProfessionalPlan = () => {
           <p>Create teams to collaborate on designs</p>
         </li>
       </ul>
+
+      {/* Professional Plan Pricing Modal */}
+      <ProfessionalPricingModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 };
 
 const EnterprisePlan = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <div
       id="enterprise-plan-wrapper"
@@ -433,13 +877,14 @@ const EnterprisePlan = () => {
         </span>
         <span className="text-md text-gray-500 ">/ month</span>
       </p>
-      <a
+      <button
         id="enterprise-start-plan-button"
         href=""
         className="font-general border border-black hover:bg-black hover:text-white hover:border-white hover:shadow-md hover:shadow-pink-500/20 px-4 py-2 text-center rounded-lg mb-2"
+        onClick={openModal}
       >
         Get Started Now
-      </a>
+      </button>
       <ul
         id="enterprise-features-list"
         className="font-general font-semibold text-black flex flex-col justify-center items-start gap-2 text-left text-sm md:text-lg"
@@ -605,6 +1050,9 @@ const EnterprisePlan = () => {
           <p>Create teams to collaborate on designs</p>
         </li>
       </ul>
+
+      {/* Enterprise Plan Pricing Modal */}
+      <EnterprisePricingModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 };
@@ -649,3 +1097,18 @@ export default function PricingSection() {
     </section>
   );
 }
+
+FreePricingModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
+
+ProfessionalPricingModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
+
+EnterprisePricingModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+};

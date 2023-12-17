@@ -28,7 +28,7 @@ const GeneralNavbar = () => {
       id="general-navbar-wrapper"
       className={`hidden sm:flex sm:flex-row lg:grid min-h-[5vh] lg:grid-cols-3 justify-between md:px-8 items-center text-center ${
         isSticky
-          ? "lg:fixed top-0 left-0 right-0 w-full sm:py-6 z-50 bg-pink-50 shadow-md"
+          ? "sm:fixed top-0 left-0 right-0 w-full sm:p-6 z-50 bg-pink-50 shadow-md"
           : ""
       }`}
     >

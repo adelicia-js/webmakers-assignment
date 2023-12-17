@@ -1,6 +1,174 @@
-const ContactUs = () => {
+import PropTypes from "prop-types";
+import { useState } from "react";
+
+const ContactUsModal = ({ isOpen, onClose }) => {
+  // Form data object to store & record input
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  // Handle form input
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    document
+      .getElementById("contact-us-form-submission-wrapper")
+      .classList.remove("hidden");
+    document.getElementById("contact-us-form-submission-wrapper").classList.add("block");
+  };
+
   return (
-    <section id="contact-us" className="p-8 sm:p-12 sm:pb-8 md:py-20 md:pb-16 lg:py-24 lg:pb-20 place-content-center text-center">
+    <div
+      id="contact-us-modal"
+      className={`fixed top-0 left-0 right-0 w-full h-full flex flex-col items-center justify-center bg-black/50 ${
+        isOpen ? "block" : "hidden"
+      }`}
+    >
+      <div
+        id="contact-us-modal-content"
+        className="relative bg-white p-8 w-fit sm:w-96 rounded-md shadow-md"
+      >
+        <p
+          id="contact-us-modal-title"
+          className="font-heading text-2xl font-semibold mb-4"
+        >
+          Leave us a message
+        </p>
+        <form
+          id="contact-us-form"
+          onSubmit={handleSubmit}
+          className="font-general flex flex-col gap-4 sm:gap-6"
+        >
+          <div id="contact-us-form-name-wrapper">
+            <label
+              htmlFor="name"
+              className="block text-md font-light text-black"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Enter your name"
+              className="mt-1 p-2 w-full border border-gray-200 rounded-md text-xs font-light text-gray-400 focus:text-sm focus:text-black focus:outline-black focus-visible:outline-black"
+              required
+              autoComplete="on"
+            />
+          </div>
+
+          <div id="contact-us-form-email-wrapper">
+            <label
+              htmlFor="email"
+              className="block text-md font-light text-black"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Enter your email"
+              className="mt-1 p-2 w-full border border-gray-200 rounded-md text-xs font-light text-gray-400 focus:text-sm focus:text-black focus:outline-black focus-visible:outline-black"
+              required
+              autoComplete="on"
+            />
+          </div>
+
+          <div id="contact-us-message-wrapper">
+            <label
+              htmlFor="message"
+              className="block text-md font-light text-black"
+            >
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              rows="4"
+              className="mt-1 p-2 w-full border border-gray-200 rounded-md text-xs font-light text-gray-400 focus:text-sm focus:text-black focus:outline-black focus-visible:outline-black"
+              placeholder="Type something here . . ."
+              required
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="bg-black text-white py-2 px-4 border border-transparent rounded-md hover:bg-white hover:border-black hover:text-black hover:shadow-lg focus:outline-none"
+          >
+            Submit
+          </button>
+        </form>
+        <div
+          id="contact-us-form-submission-wrapper"
+          className="mt-4 px-4 hidden text-sm text-center font-heading w-[70vw] sm:w-fit"
+        >
+          <p id="contact-us-form-submission-message" className="break-words">
+            Thanks for your message!{" "}
+            <span className="whitespace-pre">
+              We shall get back to you soon. 💖
+            </span>
+          </p>
+        </div>
+        <button
+          id="close-contact-modal-button"
+          className="absolute top-[2%] left-[2%] text-black hover:bg-black hover:rounded-full hover:text-white cursor-pointer"
+          onClick={onClose}
+        >
+          <svg
+            aria-label="Close button for contact us modal"
+            id="contact-modal-close-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6 border border-black rounded-full p-1"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
+};
+
+const ContactUs = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  return (
+    <section
+      id="contact-us"
+      className="p-8 sm:p-12 sm:pb-8 md:py-20 md:pb-16 lg:py-24 lg:pb-20 place-content-center text-center"
+    >
       <p
         id="contact-us-header-1"
         className="text-4xl sm:text-5xl lg:text-6xl font-heading font-semibold mb-1"
@@ -20,13 +188,16 @@ const ContactUs = () => {
         Start your 30-day free trial.{" "}
         <span className="whitespace-nowrap">Cancel anytime.</span>
       </p>
-      <a
+      <button
         id="contact-us-button"
         href="#contact-us"
-        className="font-general bg-black border border-transparent hover:border-white/60 hover:shadow-lg hover:shadow-pink-200 text-white  py-3 px-4 w-full sm:py-3 sm:px-5 md:px-8 md:py-3 rounded-md sm:text-base md:text-lg"
+        className="font-general bg-black border border-transparent hover:border-white/60 hover:shadow-lg hover:shadow-pink-200 text-white py-2 px-4 sm:py-3 sm:px-5 md:px-8 md:py-2 rounded-md sm:text-base md:text-lg"
+        onClick={openModal}
       >
         Contact Us
-      </a>
+      </button>
+      {/* Contact Us Modal */}
+      <ContactUsModal isOpen={isModalOpen} onClose={closeModal} />
     </section>
   );
 };
@@ -52,7 +223,7 @@ const FooterSocials = () => {
           <a
             id="twitter-link"
             aria-label="Twitter Link"
-            href="https://twitter.com/webmakersstudio"
+            href="https://twitter.com/unicraft"
             target="_blank"
             rel="noreferrer"
           >
@@ -78,7 +249,7 @@ const FooterSocials = () => {
           <a
             id="linkedin-link"
             aria-label="LinkedIn Link"
-            href="https://www.linkedin.com/in/chetanverma7/"
+            href="https://www.linkedin.com/company/unicraft"
             target="_blank"
             rel="noreferrer"
           >
@@ -105,7 +276,7 @@ const FooterSocials = () => {
           <a
             id="facebook-link"
             aria-label="Facebook Link"
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/unicraft"
             target="_blank"
             rel="noreferrer"
           >
@@ -154,7 +325,7 @@ const FooterSocials = () => {
           <a
             id="angel_list-link"
             aria-label="Angel List Link"
-            href="https://wellfound.com/company/webmakers-studio"
+            href="https://wellfound.com/company/unicraft"
             target="_blank"
             rel="noreferrer"
           >
@@ -185,7 +356,7 @@ const FooterSocials = () => {
           <a
             id="dribble-link"
             aria-label="Dribble Link"
-            href="https://dribbble.com/chetanverma"
+            href="https://dribbble.com/unicraft"
             target="_blank"
             rel="noreferrer"
           >
@@ -250,3 +421,8 @@ export default function FooterSection() {
     </footer>
   );
 }
+
+ContactUsModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
