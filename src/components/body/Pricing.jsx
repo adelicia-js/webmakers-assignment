@@ -60,7 +60,7 @@ const FreePricingModal = ({ isOpen, onClose }) => {
             </label>
             <input
               type="text"
-              id="name"
+              id="free-pricing-form-name"
               name="name"
               value={formData.name}
               onChange={handleChange}
@@ -80,7 +80,7 @@ const FreePricingModal = ({ isOpen, onClose }) => {
             </label>
             <input
               type="email"
-              id="email"
+              id="free-pricing-form-email"
               name="email"
               value={formData.email}
               onChange={handleChange}
@@ -193,7 +193,7 @@ const ProfessionalPricingModal = ({ isOpen, onClose }) => {
             </label>
             <input
               type="text"
-              id="name"
+              id="professional-pricing-form-name"
               name="name"
               value={formData.name}
               onChange={handleChange}
@@ -213,7 +213,7 @@ const ProfessionalPricingModal = ({ isOpen, onClose }) => {
             </label>
             <input
               type="email"
-              id="email"
+              id="professional-pricing-form-email"
               name="email"
               value={formData.email}
               onChange={handleChange}
@@ -329,7 +329,7 @@ const EnterprisePricingModal = ({ isOpen, onClose }) => {
             </label>
             <input
               type="text"
-              id="name"
+              id="enterprise-pricing-form-name"
               name="name"
               value={formData.name}
               onChange={handleChange}
@@ -349,7 +349,7 @@ const EnterprisePricingModal = ({ isOpen, onClose }) => {
             </label>
             <input
               type="email"
-              id="email"
+              id="enterprise-pricing-form-email"
               name="email"
               value={formData.email}
               onChange={handleChange}

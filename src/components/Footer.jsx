@@ -58,7 +58,7 @@ const ContactUsModal = ({ isOpen, onClose }) => {
             </label>
             <input
               type="text"
-              id="name"
+              id="contact-us-form-name"
               name="name"
               value={formData.name}
               onChange={handleChange}
@@ -78,7 +78,7 @@ const ContactUsModal = ({ isOpen, onClose }) => {
             </label>
             <input
               type="email"
-              id="email"
+              id="contact-us-form-email"
               name="email"
               value={formData.email}
               onChange={handleChange}
