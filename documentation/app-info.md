@@ -1,4 +1,4 @@
-# Frontend Internship Task - UniCraft App
+# Webmakers Studio Frontend Internship Task - UniCraft App
 
 Hosted with Vercel at https://webmakers-assignment.vercel.app/
 
