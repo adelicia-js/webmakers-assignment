@@ -15,8 +15,10 @@ const GeneralNavbar = () => {
       }
     };
 
+    // Add event listener to handle scrolling
     window.addEventListener("scroll", handleScroll);
 
+    // Clean up event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

@@ -1,16 +1,22 @@
 const HeadingDescription = () => {
   return (
+    // Heading and description
     <section id="intro-header-wrapper" className="flex flex-col gap-6 justify-center items-center text-center min-h-[40vh]">
+      {/* Heading */}
       <h1 id="intro-header" className="text-4xl sm:text-6xl md:text-7xl text-center font-bold">
         Elevate Your Presence with{" "}
         <span className="xl:whitespace-pre">
           Seamless Design and Innovation.
         </span>
       </h1>
+
+      {/* Description */}
       <h2 id="intro-header-description" className="font-heading text-md md:text-xl ">
         From strategic planning to digital presence, we{`'`}re your dedicated
         partner in achieving solo success.
       </h2>
+
+      {/* Pricing Link */}
       <a id="intro-pricing-link"
         className="font-general text-md md:text-lg bg-black border border-transparent hover:border-white/60 hover:shadow-lg hover:shadow-pink-200 text-white px-10 py-3 rounded-md"
         href="#pricing"
@@ -23,8 +29,12 @@ const HeadingDescription = () => {
 
 const CompaniesDescription = () => {
   return (
+    // List of companies supported by UniCraft
     <section id="intro-companies-wrapper" className="font-general text-gray-400 mt-4 md:mt-6 lg:mt-8 flex flex-col justify-center md:justify-end items-center gap-6 sm:min-h-[15vh]">
+      
       <p id="intro-companies-header" className="text-sm md:text-md">Trusted by 250+ Companies</p>
+      
+      {/* Companies List */}
       <ul id="intro-companies-list" className="gap-12 sm:p-4 py-4 grid grid-rows-3 grid-cols-2 min-[350px]:grid-rows-2 min-[350px]:grid-cols-3 lg:flex lg:flex-row md:gap-20 lg:gap-16 justify-center sm:place-items-center lg:justify-end items-center">
         <li id="zapier-logo" className="justify-self-center">
           <svg
@@ -273,6 +283,7 @@ const CompaniesDescription = () => {
 
 export default function Introduction() {
   return (
+    // Introduction Section - Heading, Description + Companies List
     <section id="intro" className="pt-4 p-8 sm:p-12 md:p-8 sm:m-8 sm:min-h-[80vh] flex flex-col justify-start sm:place-content-center ">
       <HeadingDescription />
       <CompaniesDescription/>

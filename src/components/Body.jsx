@@ -5,6 +5,7 @@ import CustomerReview from "./body/Review";
 import PricingSection from "./body/Pricing";
 import FAQSection from "./body/Faq";
 
+// Images for carousel
 const image_list = [
   {
       imageUrl:"../../imageOne.webp"
@@ -27,6 +28,7 @@ const image_list = [
 ]
 
 export default function MainSection() {
+  // Main Section
   return (
     <main id="main-content-wrapper">
       <Introduction />

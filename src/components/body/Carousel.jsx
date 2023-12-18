@@ -31,7 +31,9 @@ export default function ImageCarousel({ images }) {
       <a
         id="view-recent-work-link"
         className="font-general text-sm sm:text-md md:text-lg border border-black hover:border-white/60 hover:bg-black hover:text-white hover:shadow-lg hover:shadow-pink-300/50 px-12 py-3 rounded-md w-fit place-self-center"
-        href=""
+        href="https://dribbble.com/search/unicraft" //temporary link I thought would make sense
+        target="_blank"
+        rel="noreferrer"
       >
         View Recent Work
       </a>

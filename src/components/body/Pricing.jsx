@@ -21,6 +21,8 @@ const FreePricingModal = ({ isOpen, onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+
+    // Make the form submission message visible on submit
     document
       .getElementById("free-pricing-form-submission-wrapper")
       .classList.remove("hidden");
@@ -30,6 +32,7 @@ const FreePricingModal = ({ isOpen, onClose }) => {
   };
 
   return (
+    // Free Pricing modal that opens up a form for users to sign up 
     <div
       id="free-pricing-modal"
       className={`fixed top-0 left-0 right-0 w-full h-full flex flex-col items-center justify-center bg-black/50 ${
@@ -46,6 +49,8 @@ const FreePricingModal = ({ isOpen, onClose }) => {
         >
           Sign Up
         </p>
+
+        {/* Free Pricing form */}
         <form
           id="free-pricing-form"
           onSubmit={handleSubmit}
@@ -98,6 +103,8 @@ const FreePricingModal = ({ isOpen, onClose }) => {
             Submit
           </button>
         </form>
+
+        {/* Form submission message that appears on submit */}
         <div
           id="free-pricing-form-submission-wrapper"
           className="mt-4 px-4 hidden text-sm text-center font-heading w-[70vw] sm:w-fit break-words"
@@ -107,6 +114,7 @@ const FreePricingModal = ({ isOpen, onClose }) => {
           </p>
           <p>Please check your mail for instructions.</p>
         </div>
+        
         <button
           id="close-free-pricing-modal-button"
           className="absolute top-[2%] left-[2%] text-black hover:bg-black hover:rounded-full hover:text-white cursor-pointer"
@@ -154,6 +162,8 @@ const ProfessionalPricingModal = ({ isOpen, onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+
+    // Make the form submission message visible on submit
     document
       .getElementById("professional-pricing-form-submission-wrapper")
       .classList.remove("hidden");
@@ -163,6 +173,7 @@ const ProfessionalPricingModal = ({ isOpen, onClose }) => {
   };
 
   return (
+    // Professional Pricing modal that opens up a form for users to sign up 
     <div
       id="professional-pricing-modal"
       className={`fixed top-0 left-0 right-0 w-full h-full flex flex-col items-center justify-center bg-black/50 ${
@@ -179,6 +190,8 @@ const ProfessionalPricingModal = ({ isOpen, onClose }) => {
         >
           Sign Up
         </p>
+
+        {/* Professional Pricing form */}
         <form
           id="professional-pricing-form"
           onSubmit={handleSubmit}
@@ -231,6 +244,8 @@ const ProfessionalPricingModal = ({ isOpen, onClose }) => {
             Submit
           </button>
         </form>
+
+        {/* Form submission message that appears on submit */}
         <div
           id="professional-pricing-form-submission-wrapper"
           className="text-black mt-4 px-4 hidden text-sm text-center font-heading w-[70vw] sm:w-fit break-words"
@@ -243,6 +258,7 @@ const ProfessionalPricingModal = ({ isOpen, onClose }) => {
           </p>
           <p>Please check your mail for instructions.</p>
         </div>
+
         <button
           id="close-professional-pricing-modal-button"
           className="absolute top-[2%] left-[2%] text-black hover:bg-black hover:rounded-full hover:text-white cursor-pointer"
@@ -290,6 +306,8 @@ const EnterprisePricingModal = ({ isOpen, onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+
+    // Make the form submission message visible on submit
     document
       .getElementById("enterprise-pricing-form-submission-wrapper")
       .classList.remove("hidden");
@@ -299,6 +317,7 @@ const EnterprisePricingModal = ({ isOpen, onClose }) => {
   };
 
   return (
+    // Enterprise pricing modal that opens up a form for users to sign up
     <div
       id="enterprise-pricing-modal"
       className={`fixed top-0 left-0 right-0 w-full h-full flex flex-col items-center justify-center bg-black/50 ${
@@ -315,6 +334,8 @@ const EnterprisePricingModal = ({ isOpen, onClose }) => {
         >
           Sign Up
         </p>
+
+        {/* Enterprise pricing form */}
         <form
           id="enterprise-pricing-form"
           onSubmit={handleSubmit}
@@ -367,6 +388,8 @@ const EnterprisePricingModal = ({ isOpen, onClose }) => {
             Submit
           </button>
         </form>
+
+        {/* Form submission message that appears on submit */}
         <div
           id="enterprise-pricing-form-submission-wrapper"
           className="mt-4 px-4 hidden text-sm text-center font-heading w-[70vw] sm:w-fit break-words"
@@ -379,6 +402,7 @@ const EnterprisePricingModal = ({ isOpen, onClose }) => {
           </p>
           <p>Please check your mail for instructions.</p>
         </div>
+
         <button
           id="close-enterprise-pricing-modal-button"
           className="absolute top-[2%] left-[2%] text-black hover:bg-black hover:rounded-full hover:text-white cursor-pointer"
@@ -407,17 +431,21 @@ const EnterprisePricingModal = ({ isOpen, onClose }) => {
 };
 
 const FreebiePlan = () => {
+  // State to determine modal visibility
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // Function to toggle modal visibility (open)
   const openModal = () => {
     setIsModalOpen(true);
   };
 
+  // Function to close modal
   const closeModal = () => {
     setIsModalOpen(false);
   };
 
   return (
+    // Freebie pricing plan
     <div
       id="freebie-plan-wrapper"
       className="flex flex-col p-4 border border-gray-500/20 bg-white text-black shadow-lg shadow-gray-500/50 rounded-md gap-2 text-left"
@@ -428,12 +456,14 @@ const FreebiePlan = () => {
       >
         Freebie
       </p>
+
       <p
         id="freebie-description"
         className="font-light font-general text-sm sm:text-md pb-4"
       >
         Ideal for individuals who need quick access to basic features.
       </p>
+
       <p
         id="freebie-price"
         className="font-heading font-light pb-4 flex flex-row items-center gap-2"
@@ -443,6 +473,7 @@ const FreebiePlan = () => {
         </span>
         <span className="text-md text-gray-500 ">/ month</span>
       </p>
+
       <button
         id="freebie-start-plan-button"
         href=""
@@ -451,6 +482,8 @@ const FreebiePlan = () => {
       >
         Get Started Now
       </button>
+      
+      {/* Freebie plan features list */}
       <ul
         id="freebie-features-list"
         className="font-general font-light text-gray-400 flex flex-col justify-center items-start gap-2 text-left text-sm md:text-lg"
@@ -617,23 +650,28 @@ const FreebiePlan = () => {
         </li>
       </ul>
 
-      {/* Free Plan Pricing Modal */}
+      {/* Freebie Plan Pricing Modal */}
       <FreePricingModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 };
 
 const ProfessionalPlan = () => {
+  // State to determine modal visibility
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // Function to toggle modal visibility (open)
   const openModal = () => {
     setIsModalOpen(true);
   };
 
+  // Function to close modal
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
   return (
+    // Professional pricing plan
     <div
       id="professional-plan-wrapper"
       className="flex flex-col p-4 border border-gray-500 bg-gray-800 text-white shadow-xl shadow-gray-500/50 rounded-md gap-2 text-left"
@@ -644,6 +682,7 @@ const ProfessionalPlan = () => {
       >
         Professional
       </p>
+
       <p
         id="professional-description"
         className="font-light font-general text-sm sm:text-md pb-4"
@@ -651,6 +690,7 @@ const ProfessionalPlan = () => {
         Ideal for individuals who need advanced features and tools for client
         work.
       </p>
+      
       <p
         id="professional-price"
         className="font-heading font-light pb-4 flex flex-row items-center gap-2"
@@ -660,6 +700,7 @@ const ProfessionalPlan = () => {
         </span>
         <span className="text-md text-white/50">/ month</span>
       </p>
+      
       <button
         id="professional-start-plan-button"
         href=""
@@ -668,6 +709,8 @@ const ProfessionalPlan = () => {
       >
         Get Started Now
       </button>
+      
+      {/* Professional Plan Features List */}
       <ul
         id="professional-features-list"
         className="font-general text-white flex flex-col justify-center items-start gap-2 text-left text-sm md:text-lg"
@@ -841,16 +884,21 @@ const ProfessionalPlan = () => {
 };
 
 const EnterprisePlan = () => {
+  // State to determine modal visibility
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // Function to toggle modal visibility (open)
   const openModal = () => {
     setIsModalOpen(true);
   };
 
+  // Function to close modal
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
   return (
+    // Enterprise pricing plan
     <div
       id="enterprise-plan-wrapper"
       className="flex flex-col p-4 border border-gray-500/20 bg-white text-black shadow-lg shadow-gray-500/50 rounded-md gap-2 text-left"
@@ -861,6 +909,7 @@ const EnterprisePlan = () => {
       >
         Enterprise
       </p>
+
       <p
         id="enterprise-description"
         className="font-light font-general text-sm sm:text-md pb-4"
@@ -868,6 +917,7 @@ const EnterprisePlan = () => {
         Ideal for businesses who need personalized services and security for
         large teams.
       </p>
+      
       <p
         id="enterprise-price"
         className="font-heading font-light pb-4 flex flex-row items-center gap-2"
@@ -877,6 +927,7 @@ const EnterprisePlan = () => {
         </span>
         <span className="text-md text-gray-500 ">/ month</span>
       </p>
+      
       <button
         id="enterprise-start-plan-button"
         href=""
@@ -885,6 +936,8 @@ const EnterprisePlan = () => {
       >
         Get Started Now
       </button>
+      
+      {/* Enterprise plan features list */}
       <ul
         id="enterprise-features-list"
         className="font-general font-semibold text-black flex flex-col justify-center items-start gap-2 text-left text-sm md:text-lg"
@@ -1059,6 +1112,7 @@ const EnterprisePlan = () => {
 
 const PricingPlans = () => {
   return (
+    // Pricing Plans - Freebie, Professional, Enterprise
     <section
       id="pricing-plans-wrapper"
       className="flex flex-col gap-4 px-4 min-[400px]:px-12 min-[500px]:px-16 sm:px-20 md:flex-row md:grid md:grid-rows-2 md:grid-cols-2 md:px-2 md:gap-6 lg:grid-rows-1 xl:grid-cols-3 xl:px-32"
@@ -1072,6 +1126,7 @@ const PricingPlans = () => {
 
 export default function PricingSection() {
   return (
+    // Pricing Section
     <section
       id="pricing"
       className="p-4 md:p-8 lg:py-32 flex flex-col gap-8 justify-center items-center text-center"

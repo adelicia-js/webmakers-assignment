@@ -1,4 +1,5 @@
 export default function CustomerReview() {
+  // Review section
   return (
     <section id="review">
       <div

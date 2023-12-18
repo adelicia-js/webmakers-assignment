@@ -21,6 +21,8 @@ const ContactUsModal = ({ isOpen, onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+    
+    // Make the form submission message visible on submit
     document
       .getElementById("contact-us-form-submission-wrapper")
       .classList.remove("hidden");
@@ -28,6 +30,7 @@ const ContactUsModal = ({ isOpen, onClose }) => {
   };
 
   return (
+    // Contact us modal that opens up a form for users to enter their details & a message
     <div
       id="contact-us-modal"
       className={`fixed top-0 left-0 right-0 w-full h-full flex flex-col items-center justify-center bg-black/50 ${
@@ -44,6 +47,8 @@ const ContactUsModal = ({ isOpen, onClose }) => {
         >
           Leave us a message
         </p>
+
+        {/* Contact Us form */}
         <form
           id="contact-us-form"
           onSubmit={handleSubmit}
@@ -115,6 +120,8 @@ const ContactUsModal = ({ isOpen, onClose }) => {
             Submit
           </button>
         </form>
+
+        {/* Form submission message that appears on submit */}
         <div
           id="contact-us-form-submission-wrapper"
           className="mt-4 px-4 hidden text-sm text-center font-heading w-[70vw] sm:w-fit"
@@ -126,6 +133,7 @@ const ContactUsModal = ({ isOpen, onClose }) => {
             </span>
           </p>
         </div>
+
         <button
           id="close-contact-modal-button"
           className="absolute top-[2%] left-[2%] text-black hover:bg-black hover:rounded-full hover:text-white cursor-pointer"
@@ -154,17 +162,21 @@ const ContactUsModal = ({ isOpen, onClose }) => {
 };
 
 const ContactUs = () => {
+  // State to determine modal visibility
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // Function to toggle modal visibility (open)
   const openModal = () => {
     setIsModalOpen(true);
   };
 
+  // Function to close modal
   const closeModal = () => {
     setIsModalOpen(false);
   };
 
   return (
+    // Contact us section
     <section
       id="contact-us"
       className="p-8 sm:p-12 sm:pb-8 md:py-20 md:pb-16 lg:py-24 lg:pb-20 place-content-center text-center"
@@ -188,6 +200,8 @@ const ContactUs = () => {
         Start your 30-day free trial.{" "}
         <span className="whitespace-nowrap">Cancel anytime.</span>
       </p>
+
+      {/* Contact Us Button that opens up modal */}
       <button
         id="contact-us-button"
         href="#contact-us"
@@ -196,6 +210,7 @@ const ContactUs = () => {
       >
         Contact Us
       </button>
+
       {/* Contact Us Modal */}
       <ContactUsModal isOpen={isModalOpen} onClose={closeModal} />
     </section>
@@ -203,6 +218,7 @@ const ContactUs = () => {
 };
 
 const FooterSocials = () => {
+  // Company Socials
   return (
     <div
       id="footer-socials"
@@ -212,6 +228,8 @@ const FooterSocials = () => {
         © 2077 Untitled UI.{" "}
         <span className="whitespace-pre">All rights reserved.</span>
       </p>
+
+      {/* Company Socials List */}
       <ul
         id="footer-socials-list"
         className="sm:grid-rows-1 sm:grid-cols-6 grid grid-rows-2 grid-cols-3 gap-x-8 gap-y-3 items-center place-items-center justify-items-center"
@@ -388,6 +406,7 @@ const FooterSocials = () => {
 
 const FooterContent = () => {
   return (
+    // Footer content (logo + description + socials)
     <section id="footer-content-wrapper" className="p-8 flex flex-col">
       <div id="footer-description" className="border-t flex flex-col gap-4">
         <a
@@ -411,6 +430,7 @@ const FooterContent = () => {
 };
 
 export default function FooterSection() {
+  // Footer section
   return (
     <footer
       id="footer"

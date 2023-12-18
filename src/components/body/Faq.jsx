@@ -2,13 +2,16 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 
 const FAQItem = ({ question, answer }) => {
+  // State for determining whether the question item is open
   const [isOpen, setIsOpen] = useState(false);
 
+  // Function to toggle the question item
   const toggleQuestion = () => {
     setIsOpen(!isOpen);
   };
 
   return (
+    // FAQ item
     <div id="faq-item" className="border-b border-gray-300/50">
       <div
         id="faq-item-wrapper"
@@ -17,7 +20,10 @@ const FAQItem = ({ question, answer }) => {
         }`}
         onClick={toggleQuestion}
       >
+        {/* Question */}
         <p id="faq-question" className="text-lg">{question}</p>
+        
+        {/* Toggle Button - Open/Close */}
         <p id="faq-toggle-button">
           {isOpen ? (
             <svg
@@ -52,6 +58,8 @@ const FAQItem = ({ question, answer }) => {
           )}
         </p>
       </div>
+      
+      {/* Answer */}
       {isOpen && <p id="faq-answer" className="p-6 text-gray-600 text-md">{answer}</p>}
     </div>
   );
@@ -92,9 +100,12 @@ export default function FAQSection() {
   ];
 
   return (
+    // FAQ Section
     <section id="faq" className="p-8 sm:py-16 md:py-20 lg:py-32 flex flex-col justify-center items-center gap-2">
         <p id="faq-title" className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold">Frequently Asked Questions</p>
         <p id="faq-description" className="text-center text-md font-general text-gray-500">Everything you need to know about the product and billing.</p>
+        
+        {/* FAQ Items List */}
         <div id="faq-items" className="flex flex-col sm:gap-6 md:gap-6 lg:gap-8 pt-4 sm:pt-6 font-general sm:w-[75vw] lg:w-[50vw]">
           {faqData.map((faq, index) => (
             <FAQItem key={index} question={faq.question} answer={faq.answer} />

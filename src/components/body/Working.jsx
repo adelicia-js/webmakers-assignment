@@ -1,10 +1,13 @@
 const Process = () => {
+  // Process Section: Step 1 -> Step 2 -> Step 3
   return (
     <div id="process-wrapper" className="relative md:px-6">
+      {/* List of steps */}
       <ul
         id="process-list"
         className="z-10 flex flex-col md:flex-row lg:grid lg:grid-rows-1 lg:grid-cols-5 justify-center items-center md:gap-6"
       >
+        {/* Step 1 */}
         <li
           id="process-1"
           className="justify-self-center md:justify-self-start w-full relative md:px-6"
@@ -15,6 +18,8 @@ const Process = () => {
           >
             1
           </p>
+
+          {/* Step 1 content */}
           <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col gap-1 justify-center items-center text-black">
             <p className="font-bold font-heading text-lg sm:text-xl lg:text-[1.4rem]">
               Subscribe
@@ -26,6 +31,7 @@ const Process = () => {
           </div>
         </li>
 
+        {/* Arrow */}
         <li
           id="process-arrow-1"
           className="justify-self-center rotate-[110deg] md:rotate-0"
@@ -46,6 +52,7 @@ const Process = () => {
           </svg>
         </li>
 
+        {/* Step 2 */}
         <li
           id="process-2"
           className="justify-self-center md:justify-self-center w-full relative md:px-4"
@@ -58,6 +65,8 @@ const Process = () => {
               >
                 2
               </p>
+
+              {/* Step 2 content */}
               <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col gap-1 justify-center items-center text-black">
                 <p className="font-heading font-bold text-lg sm:text-xl lg:text-[1.4rem]">
                   Request
@@ -71,6 +80,7 @@ const Process = () => {
           </ul>
         </li>
 
+        {/* Arrow */}
         <li
           id="process-arrow-2"
           className="justify-self-center transform -scale-y-100 rotate-[80deg] md:transform-none md:scale-y-0 md:rotate-0"
@@ -91,6 +101,7 @@ const Process = () => {
           </svg>
         </li>
 
+        {/* Step 3 */}
         <li
           id="process-3"
           className="justify-self-center md:justify-self-end w-full relative"
@@ -103,6 +114,8 @@ const Process = () => {
               >
                 3
               </p>
+
+              {/* Step 3 content */}
               <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col gap-1 justify-center items-center text-black">
                 <p className="font-heading font-bold text-lg sm:text-xl lg:text-[1.4rem]">
                   Revise
@@ -121,6 +134,7 @@ const Process = () => {
 };
 
 export default function HowItWorks() {
+  // How it works section
   return (
     <section
       id="how-it-works"
@@ -143,7 +157,6 @@ export default function HowItWorks() {
           >
             Premium designs, unlimited requests, super fast delivery,
             <span className="md:whitespace-nowrap">
-              {" "}
               for one flat monthly fee.
             </span>
           </h2>

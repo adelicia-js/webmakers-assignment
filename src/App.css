@@ -1,7 +1,9 @@
+/* Transition for general navigation bar - when user scrolls */
 #general-navbar-wrapper {
   transition: background-color 0.3s ease;
 }
 
+/* Media query for the font size of features list - sm screens only */
 @media (min-width: 640px) {
   #freebie-features-list,
   #professional-features-list,
