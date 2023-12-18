@@ -1,3 +1,5 @@
+This app was built with Vite + React & Tailwind CSS. Hosted with Vercel at https://webmakers-assignment.vercel.app/
+
 ## To run app locally
 
 Clone the app
