@@ -1,7 +1,8 @@
 # Webmakers Studio Frontend Internship Task - UniCraft App
 
 Hosted with Vercel at https://webmakers-assignment.vercel.app/
-This app was built with Vite + React & Tailwind CSS.
+
+This app was built with Vite + React & Tailwind CSS. Hosted with Vercel.
 
 ## To run app locally
     
