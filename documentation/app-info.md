@@ -70,10 +70,10 @@ This app was built with Vite + React & Tailwind CSS. Hosted with Vercel.
 This is only to discuss steps I took to improve app performance as much as possible, and my success in the process.
 
 - Mobile Performance 
-  ![Mobile Performance](mobile-performance.png)
+  ![Mobile Performance](./mobile-performance.png)
 
 - Desktop Performance
-  ![Desktop Performance](desktop-performance.png)
+  ![Desktop Performance](./desktop-performance.png)
 
   This was achieved through multiple suggestions offered by the Lighthouse website (https://pagespeed.web.dev/) which greatly improved aspects like accessibility (which was especially initially affected), performance and a better user experience.
 
