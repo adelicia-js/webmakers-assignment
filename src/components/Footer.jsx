@@ -56,7 +56,7 @@ const ContactUsModal = ({ isOpen, onClose }) => {
         >
           <div id="contact-us-form-name-wrapper">
             <label
-              htmlFor="name"
+              htmlFor="contact-us-form-name"
               className="block text-md font-light text-black"
             >
               Name
@@ -76,7 +76,7 @@ const ContactUsModal = ({ isOpen, onClose }) => {
 
           <div id="contact-us-form-email-wrapper">
             <label
-              htmlFor="email"
+              htmlFor="contact-us-form-email"
               className="block text-md font-light text-black"
             >
               Email
@@ -96,13 +96,13 @@ const ContactUsModal = ({ isOpen, onClose }) => {
 
           <div id="contact-us-message-wrapper">
             <label
-              htmlFor="message"
+              htmlFor="contact-us-form-message"
               className="block text-md font-light text-black"
             >
               Message
             </label>
             <textarea
-              id="message"
+              id="contact-us-form-message"
               name="message"
               value={formData.message}
               onChange={handleChange}

@@ -58,7 +58,7 @@ const FreePricingModal = ({ isOpen, onClose }) => {
         >
           <div id="free-pricing-form-name-wrapper">
             <label
-              htmlFor="name"
+              htmlFor="free-pricing-form-name"
               className="block text-md font-light text-black"
             >
               Name
@@ -78,7 +78,7 @@ const FreePricingModal = ({ isOpen, onClose }) => {
 
           <div id="free-pricing-form-email-wrapper">
             <label
-              htmlFor="email"
+              htmlFor="free-pricing-form-email"
               className="block text-md font-light text-black"
             >
               Email
@@ -199,7 +199,7 @@ const ProfessionalPricingModal = ({ isOpen, onClose }) => {
         >
           <div id="professional-pricing-form-name-wrapper">
             <label
-              htmlFor="name"
+              htmlFor="professional-pricing-form-name"
               className="block text-md font-light text-black"
             >
               Name
@@ -219,7 +219,7 @@ const ProfessionalPricingModal = ({ isOpen, onClose }) => {
 
           <div id="professional-pricing-form-email-wrapper">
             <label
-              htmlFor="email"
+              htmlFor="professional-pricing-form-email"
               className="block text-md font-light text-black"
             >
               Email
@@ -343,7 +343,7 @@ const EnterprisePricingModal = ({ isOpen, onClose }) => {
         >
           <div id="enterprise-pricing-form-name-wrapper">
             <label
-              htmlFor="name"
+              htmlFor="enterprise-pricing-form-name"
               className="block text-md font-light text-black"
             >
               Name
@@ -363,7 +363,7 @@ const EnterprisePricingModal = ({ isOpen, onClose }) => {
 
           <div id="enterprise-pricing-form-email-wrapper">
             <label
-              htmlFor="email"
+              htmlFor="enterprise-pricing-form-email"
               className="block text-md font-light text-black"
             >
               Email
